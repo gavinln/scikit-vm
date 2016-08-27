@@ -1,0 +1,30 @@
+---
+- name: install numpy
+  pip: name=numpy state=present
+
+- name: install scipy
+  pip: name=scipy state=present
+
+- name: install theano
+  pip: name=theano state=present
+
+- name: install sklearn
+  pip: name=sklearn state=present
+
+- name: Install libfreetype6-dev for matplotlib
+  apt: pkg=libfreetype6-dev state=installed update_cache=true
+
+- name: Install pkg-config for matplotlib
+  apt: pkg=pkg-config state=installed update_cache=true
+
+- name: install matplotlib
+  pip: name=matplotlib state=present
+
+- name: install seaborn
+  pip: name=seaborn state=present
+
+- name: install jupyter notebook
+  pip: name=notebook version=4.2.2 state=present
+
+- name: install watermark
+  pip: name=watermark state=present
