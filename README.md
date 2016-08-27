@@ -1,9 +1,9 @@
-# stats_py_vm
+# Scikit-vm
 
 * Source code - [Github][10]
 * Author - Gavin Noronha - <gavinln@hotmail.com>
 
-[1]: https://github.com/gavinln/scikit-vm.git
+[10]: https://github.com/gavinln/scikit-vm.git
 
 ## About
 
