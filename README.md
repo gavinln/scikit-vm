@@ -74,11 +74,11 @@ There are [Ansible][120] scripts that automatically install the software when th
 
 ### Scipy 2016
 
-To get the Scikit learn [notebooks][130] from [PyCon 2015][140]. The video for
+To get the Scikit learn [notebooks][130] from [Scipy 2016][140]. The video for
 this conference is on [Youtube][150]
 
-[130]: http://scipy2016.scipy.org/ehome/index.php?eventid=146062&tabid=332930
-[140]: https://us.pycon.org/2015/
+[130]: https://github.com/amueller/scipy-2016-sklearn
+[140]: http://scipy2016.scipy.org/ehome/index.php?eventid=146062&tabid=332930
 [150]: https://www.youtube.com/watch?list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6&v=OB1reY6IX-o
 
 1. Change to the notebooks directory
