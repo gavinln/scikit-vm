@@ -10,3 +10,5 @@ pylint.log
 output.xml
 pep8.log
 sphinx/build
+ansible/playbook.retry
+.ipynb_checkpoints
