@@ -28,3 +28,9 @@
 
 - name: install watermark
   pip: name=watermark state=present
+
+- name: install Pillow
+  pip: name=pillow state=present
+
+- name: install scikit-learn
+  pip: name=scikit-learn state=present
