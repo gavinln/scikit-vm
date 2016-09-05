@@ -1,1 +1,15 @@
 https://github.com/amueller/scipy-2016-sklearn
+
+Boston house prices
+https://github.com/trovao/boston-housing
+
+Titanic survival
+https://www.youtube.com/watch?v=Cte8FYCpylk
+
+Encoder
+http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html
+
+Imputer
+http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.Imputer.html
+
+
