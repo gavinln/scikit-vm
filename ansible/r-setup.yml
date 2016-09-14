@@ -1,0 +1,60 @@
+---
+- name: Install pip
+  apt: name=python-pip state=installed
+  when: ansible_os_family == "Debian"
+
+- name: Install pip
+  yum: name=python-pip state=installed
+  when: ansible_os_family == "RedHat"
+
+- name: Install awscli
+  pip: name=awscli state=present
+
+- name: Install boto3
+  pip: name=boto3 state=present
+
+- name: Install R
+  apt: name=r-base state=installed
+  when: ansible_os_family == "Debian"
+
+- name: Install gdebi-core
+  apt: name=gdebi-core state=installed
+  when: ansible_os_family == "Debian"
+
+- name: Install libcurl
+  apt: name=libcurl4-openssl-dev state=installed
+  when: ansible_os_family == "Debian"
+
+- name: Install libxml2
+  apt: name=libxml2-dev state=installed
+  when: ansible_os_family == "Debian"
+
+- name: install urllib3 (insecure platform warning)
+  pip: name=urllib3 state=present
+
+- name: install pyOpenSSL (insecure platform warning)
+  pip: name=pyOpenSSL state=present
+
+- name: install ndg-httpsclient (insecure platform warning)
+  pip: name=ndg-httpsclient state=present
+
+- name: install pyasn1 (insecure platform warning)
+  pip: name=pyasn1 state=present
+
+- name: download rstudio-server
+  get_url:
+    url: https://download2.rstudio.org/{{ rstudio_deb }}
+    dest: /root/{{ rstudio_deb }}
+    force: no
+  when: ansible_os_family == "Debian"
+
+- name: install rstudio-server
+  command: gdebi -n /root/{{ rstudio_deb }}
+  when: ansible_os_family == "Debian"
+
+- name: copy AWS credentials file
+  copy: src={{ aws_config_file }} dest=/home/ubuntu/aws-credentials
+  when: ansible_os_family == "Debian"
+
+- name: create ruser
+  user: name=ruser groups=sudo shell=/bin/bash password=$6$WabzIXFt6$Un78lF7Ltl72i34LwAeWQ1QxszLUlbHUuvVyrEQ32bCVqsPkzae1bCQuA3fWGa78lQ/dlm9bsFQAztBoNJl4b1
