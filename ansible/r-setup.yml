@@ -41,12 +41,15 @@
 - name: install pyasn1 (insecure platform warning)
   pip: name=pyasn1 state=present
 
+- debug:
+    msg: "https://download2.rstudio.org/{{ rstudio_deb }}"
+
 - name: download rstudio-server
   get_url:
     url: https://download2.rstudio.org/{{ rstudio_deb }}
-    dest: /tmp/{{ rstudio_deb }}
-    force: no
+    dest: /tmp
   when: ansible_os_family == "Debian"
+  become: yes
 
 - name: install rstudio-server
   command: gdebi -n /tmp/{{ rstudio_deb }}
