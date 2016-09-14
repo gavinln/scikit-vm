@@ -1,0 +1,16 @@
+---
+- name: install h5py
+  pip: name=h5py state=present
+
+- name: install toolz
+  pip: name=toolz state=present
+
+- name: install dask
+  pip: name=dask state=present
+
+- name: install castra
+  pip: name=castra state=present
+
+- name: install graphviz
+  pip: name=graphviz state=present
+

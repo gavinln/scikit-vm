@@ -1,0 +1,9 @@
+---
+- name: Install tmux
+  apt: name=tmux state=installed
+
+- name: Install vifm VI - file manager
+  apt: name=vifm state=installed
+
+- name: Install tig
+  apt: name=tig state=installed

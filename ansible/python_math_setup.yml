@@ -23,6 +23,9 @@
 - name: install seaborn
   pip: name=seaborn state=present
 
+- name: install pandas
+  pip: name=pandas state=present
+
 - name: install jupyter notebook
   pip: name=notebook version=4.2.2 state=present
 

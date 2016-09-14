@@ -18,3 +18,4 @@
     - include: cli_setup.yml
     - include: python_setup.yml
     - include: python_math_setup.yml
+    - include: python_parallel_setup.yml
