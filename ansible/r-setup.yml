@@ -44,12 +44,12 @@
 - name: download rstudio-server
   get_url:
     url: https://download2.rstudio.org/{{ rstudio_deb }}
-    dest: /root/{{ rstudio_deb }}
+    dest: /tmp/{{ rstudio_deb }}
     force: no
   when: ansible_os_family == "Debian"
 
 - name: install rstudio-server
-  command: gdebi -n /root/{{ rstudio_deb }}
+  command: gdebi -n /tmp/{{ rstudio_deb }}
   when: ansible_os_family == "Debian"
 
 - name: copy AWS credentials file
