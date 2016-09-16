@@ -1,4 +1,7 @@
 ---
+- name: install pre-requisites for h5py
+  apt: name=libhdf5-dev state=installed
+
 - name: install h5py
   pip: name=h5py state=present
 

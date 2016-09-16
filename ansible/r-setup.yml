@@ -45,15 +45,10 @@
     msg: "https://download2.rstudio.org/{{ rstudio_deb }}"
 
 - name: download rstudio-server
-  get_url:
-    url: https://download2.rstudio.org/{{ rstudio_deb }}
-    dest: /tmp
-  when: ansible_os_family == "Debian"
-  become: yes
+  shell: curl -O https://download2.rstudio.org/{{ rstudio_deb }}
 
 - name: install rstudio-server
-  command: gdebi -n /tmp/{{ rstudio_deb }}
-  when: ansible_os_family == "Debian"
+  command: gdebi -n /home/vagrant/{{ rstudio_deb }}
 
 - name: create ruser
   user: name=ruser groups=sudo shell=/bin/bash password=$6$WabzIXFt6$Un78lF7Ltl72i34LwAeWQ1QxszLUlbHUuvVyrEQ32bCVqsPkzae1bCQuA3fWGa78lQ/dlm9bsFQAztBoNJl4b1
