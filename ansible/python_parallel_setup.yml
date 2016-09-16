@@ -8,6 +8,12 @@
 - name: install toolz
   pip: name=toolz state=present
 
+- name: install cloudpickle
+  pip: name=cloudpickle state=present
+
+- name: install partd
+  pip: name=partd state=present
+
 - name: install dask
   pip: name=dask state=present
 
@@ -15,5 +21,8 @@
   pip: name=castra state=present
 
 - name: install graphviz
+  apt: name=graphviz state=present
+
+- name: install python graphviz
   pip: name=graphviz state=present
 
