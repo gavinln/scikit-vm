@@ -29,7 +29,6 @@
     repo={{ fzf_repo }}
     dest={{ fzf_home }}
     depth={{ fzf_depth }}
-    version={{ fzf_version }}
   register: fzf_status
   become_user: vagrant
 

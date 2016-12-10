@@ -17,14 +17,7 @@ Vagrant.configure("2") do |config|
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
-  config.vm.box_check_update = false
-
-  # use insecure key
-  config.ssh.insert_key = false
-
-  # If true, then any SSH connections made will enable agent forwarding.
-  # Default value: false
-  config.ssh.forward_agent = true
+  # config.vm.box_check_update = false
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
@@ -58,7 +51,8 @@ Vagrant.configure("2") do |config|
     end
 
     machine.vm.hostname = "scikit-vm"
-    machine.vm.network "private_network", ip: "192.168.33.10"
+    # machine.vm.network "private_network", ip: "192.168.33.10"
+    machine.vm.network "public_network"
 
     machine.vm.provision "shell" do |sh|
       sh.path = "ansible/ansible_install.sh"

@@ -65,7 +65,7 @@ There are [Ansible][120] scripts that automatically install the software when th
 5. Open the notebook in the browser at the URL.
 
     ```
-    http://192.168.33.10:8888/
+    http://localhost:8888/
     ```
 
 6. Open the **Index - Start Here** notebook  first
@@ -93,7 +93,7 @@ this conference is on [Youtube][150]
     svn export http://github.com/amueller/scipy-2016-sklearn/trunk/notebooks scipy2016
     ```
 
-3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks
+3. In your Jupyter notebook list at http://localhost:8888/ the notebooks
 will be in the scipy2016 directory.
 
 
@@ -119,7 +119,7 @@ this conference is on [Youtube][190]
     svn export http://github.com/jakevdp/sklearn_pycon2015/trunk/notebooks pycon2015
     ```
 
-3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks will
+3. In your Jupyter notebook list at http://localhost:8888/ the notebooks will
    be in the pycon2015 directory.
 
 ## Requirements
