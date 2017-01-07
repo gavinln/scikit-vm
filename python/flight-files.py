@@ -26,7 +26,6 @@ conda install distributed
 conda env export --file flight-files2.yml
 '''
 
-import subprocess
 import glob
 import feather
 import logging
@@ -67,6 +66,10 @@ def download_file(filename):
         print(cmd)
         subprocess.check_call(cmd.split(' '))
     return filename
+
+# import urllib
+# testfile = urllib.URLopener()
+# testfile.retrieve("http://randomsite.com/file.gz", "file.gz")
 
 
 def convert_gzip(filename):
