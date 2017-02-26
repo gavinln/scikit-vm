@@ -24,15 +24,15 @@
     dest=/etc/profile.d/autojump.sh
   when: autojump_status.changed
 
-- name: pull fzf repository
-  git:
-    repo={{ fzf_repo }}
-    dest={{ fzf_home }}
-    depth={{ fzf_depth }}
-  register: fzf_status
-  become_user: vagrant
-
-- name: install fzf
-  command: "{{ fzf_home }}/install"
-  when: fzf_status.changed
-  become_user: vagrant
+  # - name: pull fzf repository
+  #   git:
+  #     repo={{ fzf_repo }}
+  #     dest={{ fzf_home }}
+  #     depth={{ fzf_depth }}
+  #   register: fzf_status
+  #   become_user: vagrant
+  # 
+  # - name: install fzf
+  #   command: "{{ fzf_home }}/install"
+  #   when: fzf_status.changed
+  #   become_user: vagrant
