@@ -129,7 +129,7 @@ Vagrant to set up the Python development environment. The Git environment
 also provides an [SSH  client][200] for Windows.
 
 * [Oracle VM VirtualBox][210]
-* [Vagrant][220]
+* [Vagrant][220] version 1.9.1 or higher
 * [Git][230]
 
 [200]: http://en.wikipedia.org/wiki/Secure_Shell
