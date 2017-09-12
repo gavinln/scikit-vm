@@ -59,13 +59,26 @@ the VM is started.
     vagrant ssh
     ```
 
-4. Start the notebook
+4. Install Jupyter notebook extensions
+
+    ```
+    jupyter contrib nbextension install --user
+    ```
+
+5. Install vim extension (optional)
+
+    ```
+    cd $(jupyter --data-dir)/nbextensions
+    git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
+    ```
+
+6. Start the notebook
 
     ```bash
     /vagrant/scripts/jupyter_notebook.sh
     ```
 
-5. Open the notebook in the browser at the URL.
+7. Open the notebook in the browser at the URL.
 
     ```
     http://192.168.33.10:8888/

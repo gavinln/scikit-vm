@@ -36,7 +36,10 @@
   pip: name=pandas state=present executable=pip3
 
 - name: install jupyter notebook
-  pip: name=notebook version=4.2.2 state=present executable=pip3
+  pip: name=jupyter state=present executable=pip3
+
+- name: install jupyter notebook extensions
+  pip: name=jupyter_contrib_nbextensions state=present executable=pip3
 
 - name: install watermark
   pip: name=watermark state=present executable=pip3
