@@ -1,0 +1,17 @@
+Download hugo from here
+https://github.com/spf13/hugo/releases
+
+Install hugo
+sudo dpkg -i hugo*.deb
+
+Change to blog
+cd /blog-site
+
+To make a post
+cd c:\ws\ansible_vm
+
+Login using github key
+ssh-vm.bat
+
+Deploy the code
+./deploy.sh
