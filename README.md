@@ -53,7 +53,7 @@ the VM is started.
     vagrant up
     ```
 
-3. Connect to the VM
+    3. Connect to the VM
 
     ```
     vagrant ssh

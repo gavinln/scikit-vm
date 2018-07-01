@@ -3,7 +3,8 @@ colors = ["darkblue", "darkgreen", "gray"]
 
 for n, color in enumerate(colors):
     idx = np.where(test_y == n)[0]
-    plt.scatter(test_X[idx, 1], test_X[idx, 2], color=color, label="Class %s" % str(n))
+    plt.scatter(
+        test_X[idx, 1], test_X[idx, 2], color=color, label="Class %s" % str(n))
 
 markers = ['o', 'v', 's']
 for idx, marker in zip(incorrect_idx, markers):
