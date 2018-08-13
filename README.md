@@ -158,6 +158,24 @@ this conference is on [Youtube][210]
 3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks will
    be in the pycon2015 directory.
 
+## Miscellaneous topics
+
+### Statistical distances
+
+* https://www.youtube.com/watch?v=U7xdiGc7IRU&list=PLYx7XA2nY5Gd-tNhm79CNMe_qvi35PgUR
+
+#### Kolmogorov–Smirnov test
+
+* https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test
+
+#### Earth Mover's distance
+
+* https://en.wikipedia.org/wiki/Earth_mover%27s_distance
+
+#### Kullback–Leibler divergence
+
+* https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence
+
 ## Requirements
 
 The following software is needed to get the software from github and run
