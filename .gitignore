@@ -11,4 +11,5 @@ output.xml
 pep8.log
 sphinx/build
 ansible/playbook.retry
+ansible/roles/
 .ipynb_checkpoints
