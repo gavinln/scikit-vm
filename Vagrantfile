@@ -12,8 +12,8 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  # config.vm.box = "ubuntu/trusty64"
-  config.vm.box = "ubuntu/xenial64"
+  # config.vm.box = "ubuntu/xenial64"
+  config.vm.box = "ubuntu/bionic64"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -50,20 +50,33 @@ Vagrant.configure("2") do |config|
       vb.memory = "4096"
       vb.cpus = "2"
 
-      if Vagrant::Util::Platform.windows? then
-          # Fix for slow external network connections for Windows 10
-          vb.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
-          vb.customize ['modifyvm', :id, '--natdnsproxy1', 'on']
-      end
+      # if Vagrant::Util::Platform.windows? then
+      #     # Fix for slow external network connections for Windows 10
+      #     vb.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
+      #     vb.customize ['modifyvm', :id, '--natdnsproxy1', 'on']
+      # end
     end
 
     machine.vm.hostname = "scikit-vm"
     machine.vm.network "private_network", ip: "192.168.33.10"
     # machine.vm.network "public_network"
 
-    machine.vm.provision "shell" do |sh|
-      sh.path = "ansible/ansible_install.sh"
-      sh.args = "ansible/playbook.yml"
+    # machine.vm.provision "shell" do |sh|
+    #   sh.path = "ansible/ansible_install.sh"
+    #   sh.args = "ansible/playbook.yml"
+    # end
+
+    machine.vm.provision "ansible_local" do |ansible|
+      ansible.compatibility_mode = "2.0"
+      ansible.install_mode = "pip"
+      ansible.version = "2.4.4.0"
+      ansible.provisioning_path = "/vagrant/ansible"
+      ansible.galaxy_role_file = "requirements.yml"
+      ansible.galaxy_roles_path = "/vagrant/ansible/roles"
+      ansible.playbook = "playbook.yml"
+      ansible.extra_vars = {
+        ansible_python_interpreter: "/usr/bin/python3"
+      }
     end
   end
 

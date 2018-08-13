@@ -1,5 +1,6 @@
 ---
-- hosts: localhost
+- hosts: all
+  become: true
   gather_facts: yes
 
   vars_files:
@@ -14,9 +15,9 @@
     - geerlingguy.ntp
 
   tasks:
-    - include: init_setup.yml
-    - include: cli_setup.yml
-    - include: python3_setup.yml
-    - include: python3_math_setup.yml
-    - include: python3_parallel_setup.yml
-#     - include: r-setup.yml
+    - import_tasks: init_setup.yml
+    - import_tasks: cli_setup.yml
+    - import_tasks: python3_setup.yml
+    - import_tasks: python3_math_setup.yml
+    - import_tasks: python3_parallel_setup.yml
+#     - import_tasks: r-setup.yml

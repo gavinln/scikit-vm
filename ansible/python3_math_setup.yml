@@ -1,6 +1,6 @@
 ---
 - name: install numpy
-  pip: name=numpy state=present executable=pip3
+  pip: name=numpy state=present
 
 - name: install libopenblas-dev
   apt: name=libopenblas-dev state=installed
@@ -12,13 +12,13 @@
   apt: name=gfortran state=installed
 
 - name: install scipy
-  pip: name=scipy state=present executable=pip3
+  pip: name=scipy state=present
 
 - name: install theano
-  pip: name=theano state=present executable=pip3
+  pip: name=theano state=present
 
 - name: install sklearn
-  pip: name=sklearn state=present executable=pip3
+  pip: name=sklearn state=present
 
 - name: Install libfreetype6-dev for matplotlib
   apt: pkg=libfreetype6-dev state=installed update_cache=true
@@ -27,25 +27,28 @@
   apt: pkg=pkg-config state=installed update_cache=true
 
 - name: install matplotlib
-  pip: name=matplotlib state=present executable=pip3
+  pip: name=matplotlib state=present
 
 - name: install seaborn
-  pip: name=seaborn state=present executable=pip3
+  pip: name=seaborn state=present
 
 - name: install pandas
-  pip: name=pandas state=present executable=pip3
+  pip: name=pandas state=present
 
 - name: install jupyter notebook
-  pip: name=jupyter state=present executable=pip3
+  pip: name=jupyter state=present
 
 - name: install jupyter notebook extensions
-  pip: name=jupyter_contrib_nbextensions state=present executable=pip3
+  pip: name=jupyter_contrib_nbextensions state=present
+
+- name: install pydot3
+  pip: name=pydot3 state=present
 
 - name: install watermark
-  pip: name=watermark state=present executable=pip3
+  pip: name=watermark state=present
 
 - name: Install libjpeg8-dev for pillow
   apt: pkg=libjpeg8-dev state=installed
 
 - name: install Pillow
-  pip: name=pillow state=present executable=pip3
+  pip: name=pillow state=present

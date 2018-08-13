@@ -53,7 +53,7 @@ the VM is started.
     vagrant up
     ```
 
-    3. Connect to the VM
+3. Connect to the VM
 
     ```
     vagrant ssh
@@ -78,13 +78,9 @@ the VM is started.
     /vagrant/scripts/jupyter_notebook.sh
     ```
 
-7. Open the notebook in the browser at the URL.
+7. Open the notebook in the browser at the URL
 
-    ```
-    http://192.168.33.10:8888/
-    ```
-
-6. Open the **Index - Start Here** notebook  first
+8. Open the **Index - Start Here** notebook  first
 
 ## Scikit-learn notebooks
 
