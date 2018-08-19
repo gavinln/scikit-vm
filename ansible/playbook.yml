@@ -20,4 +20,5 @@
     - import_tasks: python3_setup.yml
     - import_tasks: python3_math_setup.yml
     - import_tasks: python3_parallel_setup.yml
+    - import_tasks: python3_nlp.yml
 #     - import_tasks: r-setup.yml

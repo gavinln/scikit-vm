@@ -9,7 +9,10 @@
   apt: name=python3-pip state=installed
 
 - name: install httpie
-  pip: name=httpie state=present executable=pip3
+  pip: name=httpie state=present
 
 - name: install stormssh
-  pip: name=stormssh state=present executable=pip3
+  pip: name=stormssh state=present
+
+- name: install pipenv
+  pip: name=pipenv state=present

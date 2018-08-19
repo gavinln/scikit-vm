@@ -1,0 +1,6 @@
+---
+# - name: install fasttext
+#   pip: name=fasttext state=present
+
+- name: install spacy
+  pip: name=spacy state=present
