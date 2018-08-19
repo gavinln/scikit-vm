@@ -6,9 +6,8 @@
 nosetests.xml
 coverage.xml
 sloccount.sc
-pylint.log
 output.xml
-pep8.log
+*.log
 sphinx/build
 ansible/playbook.retry
 ansible/roles/
