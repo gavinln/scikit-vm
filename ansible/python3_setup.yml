@@ -14,5 +14,8 @@
 - name: install stormssh
   pip: name=stormssh state=present
 
+- name: install flake8
+  pip: name=flake8 state=present
+
 - name: install pipenv
   pip: name=pipenv state=present
