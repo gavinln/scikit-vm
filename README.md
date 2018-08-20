@@ -7,11 +7,11 @@
 
 ## About
 
-This project provides a [Ubuntu (16.04)][20] [Vagrant][30] Virtual Machine
+This project provides a [Ubuntu (18.04)][20] [Vagrant][30] Virtual Machine
 (VM) with numerical and scientific libraries for Python. It includes the
 following libraries.
 
-[20]: http://releases.ubuntu.com/16.04/
+[20]: http://releases.ubuntu.com/18.04/
 [30]: http://www.vagrantup.com/
 
 * [Numpy][40]
@@ -84,14 +84,23 @@ the VM is started.
 
 ## Scikit-learn notebooks
 
+### Scipy 2018
+
+The [SciPy 2018][200] conference has two tutorials on using the Scikit-learn
+library. There are two videos: [Video 1][210] and [Video 2][220]
+
+[200]: https://scipy2018.scipy.org/ehome/index.php?eventid=299527
+[210]: https://www.youtube.com/watch?v=4PXAztQtoTg
+[220]: https://www.youtube.com/watch?v=gK43gtGh49o
+
 ### Scipy 2017
 
-To get the Scikit learn [notebooks][130] from [Scipy 2017][140]. The video for
-this conference is on [Youtube][150]
+To get the Scikit learn [notebooks][230] from [Scipy 2017][240]. The video for
+this conference is on [Youtube][250]
 
-[130]: https://github.com/amueller/scipy-2017-sklearn
-[140]: https://scipy2017.scipy.org/ehome/index.php?eventid=220975&
-[150]: https://www.youtube.com/watch?v=2kT6QOVSgSg
+[230]: https://github.com/amueller/scipy-2017-sklearn
+[240]: https://scipy2017.scipy.org/ehome/index.php?eventid=220975&
+[250]: https://www.youtube.com/watch?v=2kT6QOVSgSg
 
 1. Change to the notebooks directory
 
@@ -99,23 +108,23 @@ this conference is on [Youtube][150]
     cd /vagrant/notebooks
     ```
 
-2. Get the notebooks into the directory scipy2016
+2. Get the notebooks into the directory scipy2017
 
     ```
     svn export https://github.com/amueller/scipy-2017-sklearn/trunk/notebooks scipy2017
     ```
 
 3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks
-will be in the scipy2016 directory.
+will be in the scipy2017 directory.
 
 ### Scipy 2016
 
-To get the Scikit learn [notebooks][160] from [Scipy 2016][170]. The video for
-this conference is on [Youtube][180]
+To get the Scikit learn [notebooks][260] from [Scipy 2016][270]. The video for
+this conference is on [Youtube][280]
 
-[160]: https://github.com/amueller/scipy-2016-sklearn
-[170]: http://scipy2016.scipy.org/ehome/index.php?eventid=146062&tabid=332930
-[180]: https://www.youtube.com/watch?list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6&v=OB1reY6IX-o
+[260]: https://github.com/amueller/scipy-2016-sklearn
+[270]: http://scipy2016.scipy.org/ehome/index.php?eventid=146062&tabid=332930
+[280]: https://www.youtube.com/watch?list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6&v=OB1reY6IX-o
 
 1. Change to the notebooks directory
 
@@ -135,13 +144,13 @@ will be in the scipy2016 directory.
 
 ### PyCon 2015
 
-To get the Scikit learn [notebooks][190] from [PyCon 2015][200]. The video for
-this conference is on [Youtube][210]
+To get the Scikit learn [notebooks][290] from [PyCon 2015][300]. The video for
+this conference is on [Youtube][310]
 
 
-[190]: https://github.com/jakevdp/sklearn_pycon2015
-[200]: https://us.pycon.org/2015/
-[210]: https://www.youtube.com/watch?v=L7R4HUQ-eQ0
+[290]: https://github.com/jakevdp/sklearn_pycon2015
+[300]: https://us.pycon.org/2015/
+[310]: https://www.youtube.com/watch?v=L7R4HUQ-eQ0
 
 1. Change to the notebooks directory
 
@@ -180,13 +189,13 @@ this conference is on [Youtube][210]
 
 The following software is needed to get the software from github and run
 Vagrant to set up the Python development environment. The Git environment
-also provides an [SSH  client][300] for Windows.
+also provides an [SSH  client][400] for Windows.
 
-* [Oracle VM VirtualBox][310]
-* [Vagrant][320] version 1.9.1 or higher
-* [Git][330]
+* [Oracle VM VirtualBox][410]
+* [Vagrant][420] version 1.9.1 or higher
+* [Git][430]
 
-[300]: http://en.wikipedia.org/wiki/Secure_Shell
-[310]: https://www.virtualbox.org/
-[320]: http://vagrantup.com/
-[330]: http://git-scm.com/
+[400]: http://en.wikipedia.org/wiki/Secure_Shell
+[410]: https://www.virtualbox.org/
+[420]: http://vagrantup.com/
+[430]: http://git-scm.com/
