@@ -72,15 +72,21 @@ the VM is started.
     git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
     ```
 
-6. Start the notebook
+6. Install Jupyterlab vim extension
+
+    ```
+    sudo jupyter labextension install jupyterlab_vim
+    ```
+
+7. Start the notebook
 
     ```bash
     /vagrant/scripts/jupyter_notebook.sh
     ```
 
-7. Open the notebook in the browser at the URL
+8. Open the notebook in the browser at the URL
 
-8. Open the **Index - Start Here** notebook  first
+9. Open the **Index - Start Here** notebook  first
 
 ## Scikit-learn notebooks
 
@@ -189,6 +195,21 @@ this conference is on [Youtube][310]
 
 3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks will
    be in the pycon2015 directory.
+
+### Text tutorial
+
+1. Change to the text notebooks directory
+
+    ```
+    cd /vagrant/notebooks/text_processing
+    ```
+
+2. Get the text examples code and data
+
+    ```
+    svn export https://github.com/scikit-learn/scikit-learn/trunk/doc/tutorial/text_analytics/skeletons skeletons
+    svn export https://github.com/scikit-learn/scikit-learn/trunk/doc/tutorial/text_analytics/data data
+    ```
 
 ## Miscellaneous topics
 
