@@ -78,10 +78,14 @@ the VM is started.
     sudo jupyter labextension install jupyterlab_vim
     ```
 
-7. Start the notebook
+7. Start the Jupyter notebook or Jupyterlab environment
 
     ```bash
     /vagrant/scripts/jupyter_notebook.sh
+    ```
+
+    ```bash
+    /vagrant/scripts/lab_notebook.sh
     ```
 
 8. Open the notebook in the browser at the URL
