@@ -1,0 +1,18 @@
+---
+- name: install jupyterlab
+  pip: name=jupyterlab state=present
+
+- name: install nodejs - for jupyterlab extensions
+  apt: name=nodejs state=installed
+
+- name: install npm - for jupyterlab extensions
+  apt: name=npm state=installed
+
+- name: install jupyterlab toc plugin
+  command: jupyter labextension install @jupyterlab/toc
+
+- name: install ipywidgets
+  pip: name=ipywidgets state=present
+
+- name: install jupyterlab widgets plugin
+  command: jupyter labextension install @jupyter-widgets/jupyterlab-manager

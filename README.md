@@ -72,26 +72,68 @@ the VM is started.
     git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
     ```
 
-6. Start the notebook
+6. Install Jupyterlab vim extension
+
+    ```
+    sudo jupyter labextension install jupyterlab_vim
+    ```
+
+7. Start the Jupyter notebook or Jupyterlab environment
 
     ```bash
     /vagrant/scripts/jupyter_notebook.sh
     ```
 
-7. Open the notebook in the browser at the URL
+    ```bash
+    /vagrant/scripts/lab_notebook.sh
+    ```
 
-8. Open the **Index - Start Here** notebook  first
+8. Open the notebook in the browser at the URL
+
+9. Open the **Index - Start Here** notebook  first
 
 ## Scikit-learn notebooks
 
 ### Scipy 2018
 
+<<<<<<< HEAD
 The [SciPy 2018][200] conference has two tutorials on using the Scikit-learn
 library. There are two videos: [Video 1][210] and [Video 2][220]
 
 [200]: https://scipy2018.scipy.org/ehome/index.php?eventid=299527
 [210]: https://www.youtube.com/watch?v=4PXAztQtoTg
 [220]: https://www.youtube.com/watch?v=gK43gtGh49o
+=======
+The Scikit-learn tutorial is in two videos
+
+* Machine learning with Scikit-Learn [Part 1][200]
+* Machine learning with Scikit-Learn [Part 2][210]
+
+[200]: https://www.youtube.com/watch?v=4PXAztQtoTg
+[210]: https://www.youtube.com/watch?v=gK43gtGh49o
+
+The notebooks are in a Github project called [scipy-2018-sklearn][220]
+
+[220]: https://github.com/amueller/scipy-2018-sklearn
+
+To get the notebooks run the following
+
+
+1. Change to the notebooks directory
+
+    ```
+    cd /vagrant/notebooks
+    ```
+
+2. Get the notebooks into the directory scipy2018
+
+    ```
+    svn export https://github.com/amueller/scipy-2018-sklearn/trunk/notebooks scipy2018
+    ```
+
+3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks
+will be in the scipy2018 directory.
+>>>>>>> fasttext_example
 
 ### Scipy 2017
 
@@ -166,6 +208,21 @@ this conference is on [Youtube][310]
 
 3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks will
    be in the pycon2015 directory.
+
+### Text tutorial
+
+1. Change to the text notebooks directory
+
+    ```
+    cd /vagrant/notebooks/text_processing
+    ```
+
+2. Get the text examples code and data
+
+    ```
+    svn export https://github.com/scikit-learn/scikit-learn/trunk/doc/tutorial/text_analytics/skeletons skeletons
+    svn export https://github.com/scikit-learn/scikit-learn/trunk/doc/tutorial/text_analytics/data data
+    ```
 
 ## Miscellaneous topics
 
