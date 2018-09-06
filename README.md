@@ -96,25 +96,16 @@ the VM is started.
 
 ### Scipy 2018
 
-<<<<<<< HEAD
 The [SciPy 2018][200] conference has two tutorials on using the Scikit-learn
 library. There are two videos: [Video 1][210] and [Video 2][220]
 
 [200]: https://scipy2018.scipy.org/ehome/index.php?eventid=299527
 [210]: https://www.youtube.com/watch?v=4PXAztQtoTg
 [220]: https://www.youtube.com/watch?v=gK43gtGh49o
-=======
-The Scikit-learn tutorial is in two videos
 
-* Machine learning with Scikit-Learn [Part 1][200]
-* Machine learning with Scikit-Learn [Part 2][210]
+The notebooks are in a Github project called [scipy-2018-sklearn][230]
 
-[200]: https://www.youtube.com/watch?v=4PXAztQtoTg
-[210]: https://www.youtube.com/watch?v=gK43gtGh49o
-
-The notebooks are in a Github project called [scipy-2018-sklearn][220]
-
-[220]: https://github.com/amueller/scipy-2018-sklearn
+[230]: https://github.com/amueller/scipy-2018-sklearn
 
 To get the notebooks run the following
 
@@ -133,16 +124,15 @@ To get the notebooks run the following
 
 3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks
 will be in the scipy2018 directory.
->>>>>>> fasttext_example
 
 ### Scipy 2017
 
-To get the Scikit learn [notebooks][230] from [Scipy 2017][240]. The video for
-this conference is on [Youtube][250]
+To get the Scikit learn [notebooks][240] from [Scipy 2017][250]. The video for
+this conference is on [Youtube][260]
 
-[230]: https://github.com/amueller/scipy-2017-sklearn
-[240]: https://scipy2017.scipy.org/ehome/index.php?eventid=220975&
-[250]: https://www.youtube.com/watch?v=2kT6QOVSgSg
+[240]: https://github.com/amueller/scipy-2017-sklearn
+[250]: https://scipy2017.scipy.org/ehome/index.php?eventid=220975&
+[260]: https://www.youtube.com/watch?v=2kT6QOVSgSg
 
 1. Change to the notebooks directory
 
@@ -161,12 +151,12 @@ will be in the scipy2017 directory.
 
 ### Scipy 2016
 
-To get the Scikit learn [notebooks][260] from [Scipy 2016][270]. The video for
-this conference is on [Youtube][280]
+To get the Scikit learn [notebooks][360] from [Scipy 2016][370]. The video for
+this conference is on [Youtube][380]
 
-[260]: https://github.com/amueller/scipy-2016-sklearn
-[270]: http://scipy2016.scipy.org/ehome/index.php?eventid=146062&tabid=332930
-[280]: https://www.youtube.com/watch?list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6&v=OB1reY6IX-o
+[360]: https://github.com/amueller/scipy-2016-sklearn
+[370]: http://scipy2016.scipy.org/ehome/index.php?eventid=146062&tabid=332930
+[380]: https://www.youtube.com/watch?list=PLYx7XA2nY5Gf37zYZMw6OqGFRPjB1jCy6&v=OB1reY6IX-o
 
 1. Change to the notebooks directory
 
@@ -182,32 +172,6 @@ this conference is on [Youtube][280]
 
 3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks
 will be in the scipy2016 directory.
-
-
-### PyCon 2015
-
-To get the Scikit learn [notebooks][290] from [PyCon 2015][300]. The video for
-this conference is on [Youtube][310]
-
-
-[290]: https://github.com/jakevdp/sklearn_pycon2015
-[300]: https://us.pycon.org/2015/
-[310]: https://www.youtube.com/watch?v=L7R4HUQ-eQ0
-
-1. Change to the notebooks directory
-
-    ```
-    cd /vagrant/notebooks
-    ```
-
-2. Get the notebooks into the directory pycon2015
-
-    ```
-    svn export http://github.com/jakevdp/sklearn_pycon2015/trunk/notebooks pycon2015
-    ```
-
-3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks will
-   be in the pycon2015 directory.
 
 ### Text tutorial
 
@@ -241,6 +205,12 @@ this conference is on [Youtube][310]
 #### Kullback–Leibler divergence
 
 * https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence
+
+## TODO
+
+Setup the following Jupyterlab extensions
+
+    * @jupyter-widgets/jupyterlab-sidecar
 
 ## Requirements
 

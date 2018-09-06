@@ -16,3 +16,19 @@
 
 - name: install jupyterlab widgets plugin
   command: jupyter labextension install @jupyter-widgets/jupyterlab-manager
+
+- name: install jupyterlab bokeh plugin
+  command: jupyter labextension install jupyterlab_bokeh
+
+- name: install nbdime
+  pip: name=nbdime state=present
+
+- name: install jupyterlab compare notebooks
+  command: jupyter labextension install nbdime-jupyterlab
+
+- name: install jupyterlab drawio
+  command: jupyter labextension install jupyterlab-drawio
+
+  # jupyter labextension install jupyterlab-flake8  # false positives
+  # jupyter labextension install @jupyterlab/git  # does not work
+  # jupyter labextension install @ijmbarr/jupyterlab_spellchecker  # not work
