@@ -188,23 +188,19 @@ will be in the scipy2016 directory.
     svn export https://github.com/scikit-learn/scikit-learn/trunk/doc/tutorial/text_analytics/data data
     ```
 
-## Miscellaneous topics
+## Jupyterlab settings
 
-### Statistical distances
+### View Jupyterlab extensions
 
-* https://www.youtube.com/watch?v=U7xdiGc7IRU&list=PLYx7XA2nY5Gd-tNhm79CNMe_qvi35PgUR
+1. Go into advanced settings editor
 
-#### Kolmogorov–Smirnov test
+2. Open the Extension Manager section
 
-* https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test
+3. Add the entry "enabled": true
 
-#### Earth Mover's distance
+4. Save the settings
 
-* https://en.wikipedia.org/wiki/Earth_mover%27s_distance
-
-#### Kullback–Leibler divergence
-
-* https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence
+5. If prompted whether you are sure, read the warning, and click "Enable"
 
 ## TODO
 
