@@ -20,18 +20,6 @@
 - name: install sklearn
   pip: name=sklearn state=present
 
-- name: Install libfreetype6-dev for matplotlib
-  apt: pkg=libfreetype6-dev state=installed update_cache=true
-
-- name: Install pkg-config for matplotlib
-  apt: pkg=pkg-config state=installed update_cache=true
-
-- name: install matplotlib
-  pip: name=matplotlib state=present
-
-- name: install seaborn
-  pip: name=seaborn state=present
-
 - name: install pandas
   pip: name=pandas state=present
 

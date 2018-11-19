@@ -29,6 +29,9 @@
 - name: install jupyterlab drawio
   command: jupyter labextension install jupyterlab-drawio
 
+- name: install jupyterlab extension for hvplot
+  command: jupyter labextension install @pyviz/jupyterlab_pyviz
+
   # jupyter labextension install jupyterlab-flake8  # false positives
   # jupyter labextension install @jupyterlab/git  # does not work
   # jupyter labextension install @ijmbarr/jupyterlab_spellchecker  # not work

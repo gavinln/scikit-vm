@@ -22,4 +22,5 @@
     - import_tasks: python3_parallel_setup.yml
     - import_tasks: python3_nlp.yml
     - import_tasks: jupyterlab-py3-setup.yml
+    - import_tasks: py3-plot-setup.yml
 #     - import_tasks: r-setup.yml
