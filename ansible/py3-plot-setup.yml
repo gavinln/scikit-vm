@@ -20,6 +20,12 @@
 - name: install chartify
   pip: name=chartify state=present executable=pip3
 
+- name: install altair
+  pip: name=altair state=present executable=pip3
+
+- name: install vega_datasets for altair
+  pip: name=vega_datasets state=present executable=pip3
+
   # - name: install bqplot
   #   pip: name=bqplot state=present executable=pip3
 
