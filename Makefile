@@ -21,3 +21,7 @@ flashcards_scikit:
 flashcards_python:
 	@jupytext --to markdown -o python_flash_cards.md notebooks/13_Python_flash_cards.ipynb
 	# @jupytext --to ipynb -o notebooks/13_Python_flash_cards.ipynb python_flash_cards.md
+
+flashcards_algorithms:
+	@jupytext --to markdown -o algorithms_flash_cards.md notebooks/14_Algorithms_flash_cards.ipynb
+	# @jupytext --to ipynb -o notebooks/14_Algorithms_flash_cards.ipynb algorithms_flash_cards.md
