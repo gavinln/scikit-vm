@@ -95,11 +95,11 @@ Decision tree is a supervised machine learning algorithm mainly used for the Reg
 
 12. What is Entropy and Information gain in Decision tree algorithm?
 
-The core algorithm for building decision tree is called ID3. ID3 uses Enteropy and Information Gain to construct a decision tree.
+The core algorithm for building decision tree is called ID3. ID3 uses Entropy and Information Gain to construct a decision tree.
 
 Entropy
 
-A decision tree is built top-down from a root node and involve partitioning of data into homogenious subsets. ID3 uses enteropy to check the homogeneity of a sample. If the sample is completely homogenious then entropy is zero and if the sample is an equally divided it has entropy of one.
+A decision tree is built top-down from a root node and involve partitioning of data into homogeneous subsets. ID3 uses entropy to check the homogeneity of a sample. If the sample is completely homogeneous then entropy is zero and if the sample is an equally divided it has entropy of one.
 
 Information Gain
 
@@ -123,7 +123,7 @@ Boosting is an iterative technique which adjust the weight of an observation bas
 
 15. What is Random Forest? How does it work?
 
-Random forest is a versatile machine learning method capable of performing both regression and classification tasks. It is also used for dimentionality reduction, treats missing values, outlier values. It is a type of ensemble learning method, where a group of weak models combine to form a powerful model.
+Random forest is a versatile machine learning method capable of performing both regression and classification tasks. It is also used for dimensionality reduction, treats missing values, outlier values. It is a type of ensemble learning method, where a group of weak models combine to form a powerful model.
 
 In Random Forest, we grow multiple trees as opposed to a single tree. To classify a new object based on attributes, each tree gives a classification. The forest chooses the classification having the most votes(Over all the trees in the forest) and in case of regression, it takes the average of outputs by different trees.
 
@@ -158,7 +158,7 @@ Though the Clustering Algorithm is not specified, this question will mostly be a
 
 Within Sum of squares is generally used to explain the homogeneity within a cluster. If you plot WSS for a range of number of clusters, you will get the plot shown below. The Graph is generally known as Elbow Curve.
 
-Red circled point in above graph i.e. Number of Cluster =6 is the point after which you don’t see any decrement in WSS. This point is known as bending point and taken as K in K — Means.This is the widely used approach but few data scientists also use Hierarchical clustering first to create dendograms and identify the distinct groups from there.
+Red circled point in above graph i.e. Number of Cluster =6 is the point after which you don’t see any decrement in WSS. This point is known as bending point and taken as K in K — Means. This is the widely used approach but few data scientists also use Hierarchical clustering first to create dendrograms and identify the distinct groups from there.
 
 21. What is deep learning?
 
@@ -194,7 +194,7 @@ Deep Learning is a sub field of machine learning concerned with algorithms inspi
 
 Reinforcement learning
 
-Reinforcement Learning is learning what to do and how to map situations to actions. The end result is to maximise the numerical reward signal. The learner is not told which action to take, but instead must discover which action will yield the maximum reward.Reinforcement learning is inspired by the learning of human beings, it is based on the reward/panelity mechanism.
+Reinforcement Learning is learning what to do and how to map situations to actions. The end result is to maximise the numerical reward signal. The learner is not told which action to take, but instead must discover which action will yield the maximum reward.Reinforcement learning is inspired by the learning of human beings, it is based on the reward/penalty mechanism.
 
 25. What is selection bias?
 
@@ -202,7 +202,7 @@ Selection bias is the bias introduced by the selection of individuals, groups or
 
 26. Explain what regularisation is and why it is useful.
 
-Regularisation is the process of adding tunning parameter to a model to induce smoothness in order to prevent overfitting. This is most often done by adding a constant multiple to an existing weight vector. This constant is often the L1(Lasso) or L2(ridge). The model predictions should then minimize the loss function calculated on the regularized training set.
+Regularisation is the process of adding tuning parameter to a model to induce smoothness in order to prevent over-fitting. This is most often done by adding a constant multiple to an existing weight vector. This constant is often the L1(Lasso) or L2(ridge). The model predictions should then minimize the loss function calculated on the regularized training set.
 
 27. What is TF/IDF vectorization?
 
