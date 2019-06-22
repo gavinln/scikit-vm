@@ -43,50 +43,50 @@ the VM is started.
 
 1. Change to the root of the project
 
-    ```
-    cd scikit-vm
-    ```
+```
+cd scikit-vm
+```
 
 2. To start the virtual machine(VM) type
 
-    ```
-    vagrant up
-    ```
+```
+vagrant up
+```
 
 3. Connect to the VM
 
-    ```
-    vagrant ssh
-    ```
+```
+vagrant ssh
+```
 
 4. Install Jupyter notebook extensions
 
-    ```
-    jupyter contrib nbextension install --user
-    ```
+```
+jupyter contrib nbextension install --user
+```
 
 5. Install vim extension (optional)
 
-    ```
-    cd $(jupyter --data-dir)/nbextensions
-    git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
-    ```
+```
+cd $(jupyter --data-dir)/nbextensions
+git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
+```
 
 6. Install Jupyterlab vim extension
 
-    ```
-    sudo jupyter labextension install jupyterlab_vim
-    ```
+```
+sudo jupyter labextension install jupyterlab_vim
+```
 
 7. Start the Jupyter notebook or Jupyterlab environment
 
-    ```bash
-    /vagrant/scripts/jupyter_notebook.sh
-    ```
+```bash
+/vagrant/scripts/jupyter_notebook.sh
+```
 
-    ```bash
-    /vagrant/scripts/lab_notebook.sh
-    ```
+```bash
+/vagrant/scripts/lab_notebook.sh
+```
 
 8. Open the notebook in the browser at the URL
 
@@ -109,18 +109,17 @@ The notebooks are in a Github project called [scipy-2018-sklearn][230]
 
 To get the notebooks run the following
 
-
 1. Change to the notebooks directory
 
-    ```
-    cd /vagrant/notebooks
-    ```
+```
+cd /vagrant/notebooks
+```
 
 2. Get the notebooks into the directory scipy2018
 
-    ```
-    svn export https://github.com/amueller/scipy-2018-sklearn/trunk/notebooks scipy2018
-    ```
+```
+svn export https://github.com/amueller/scipy-2018-sklearn/trunk/notebooks scipy2018
+```
 
 3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks
 will be in the scipy2018 directory.
@@ -136,15 +135,15 @@ this conference is on [Youtube][260]
 
 1. Change to the notebooks directory
 
-    ```
-    cd /vagrant/notebooks
-    ```
+```
+cd /vagrant/notebooks
+```
 
 2. Get the notebooks into the directory scipy2017
 
-    ```
-    svn export https://github.com/amueller/scipy-2017-sklearn/trunk/notebooks scipy2017
-    ```
+```
+svn export https://github.com/amueller/scipy-2017-sklearn/trunk/notebooks scipy2017
+```
 
 3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks
 will be in the scipy2017 directory.
@@ -160,15 +159,15 @@ this conference is on [Youtube][380]
 
 1. Change to the notebooks directory
 
-    ```
-    cd /vagrant/notebooks
-    ```
+```
+cd /vagrant/notebooks
+```
 
 2. Get the notebooks into the directory scipy2016
 
-    ```
-    svn export http://github.com/amueller/scipy-2016-sklearn/trunk/notebooks scipy2016
-    ```
+```
+svn export http://github.com/amueller/scipy-2016-sklearn/trunk/notebooks scipy2016
+```
 
 3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks
 will be in the scipy2016 directory.
@@ -177,36 +176,52 @@ will be in the scipy2016 directory.
 
 1. Change to the text notebooks directory
 
-    ```
-    cd /vagrant/notebooks/text_processing
-    ```
+```
+cd /vagrant/notebooks/text_processing
+```
 
 2. Get the text examples code and data
 
-    ```
-    svn export https://github.com/scikit-learn/scikit-learn/trunk/doc/tutorial/text_analytics/skeletons skeletons
-    svn export https://github.com/scikit-learn/scikit-learn/trunk/doc/tutorial/text_analytics/data data
-    ```
+```
+svn export https://github.com/scikit-learn/scikit-learn/trunk/doc/tutorial/text_analytics/skeletons skeletons
+svn export https://github.com/scikit-learn/scikit-learn/trunk/doc/tutorial/text_analytics/data data
+```
 
-## Jupyterlab settings
+## Plotting
 
-### View Jupyterlab extensions
+### Interactive charts with Plotly
 
-1. Go into advanced settings editor
+[Plotly.js][500] is an open source Javascript plotting library.
+[Plotly.py][510] is a Python wrapper over the Plotly javascript plotting
+library. [Plotly express][520] is a high-level wrapper around the Plotly Python
+library for rapid data exploration and plotting. It uses Pandas dataframes to
+transfer data to Plotly.
 
-2. Open the Extension Manager section
+[500]: https://plot.ly/javascript/
+[510]: https://plot.ly/python/
+[520]: https://www.plotly.express/
 
-3. Add the entry "enabled": true
+1. Change to the notebooks directory
 
-4. Save the settings
+```
+cd /vagrant/notebooks
+```
 
-5. If prompted whether you are sure, read the warning, and click "Enable"
+2. Get the notebooks into the directory px-plot directory
 
-## TODO
+```
+svn export https://github.com/plotly/plotly_express/branches/gh-pages px-plot
+rm -rf px-plot/plotly_express
+```
 
-Setup the following Jupyterlab extensions
+3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks
+   will be in the plotly_express directory.
 
-    * @jupyter-widgets/jupyterlab-sidecar
+https://towardsdatascience.com/its-2019-make-your-data-visualizations-interactive-with-plotly-b361e7d45dc6
+
+https://github.com/jonmmease/plotly_ipywidget_notebooks
+
+### Seaborn
 
 ## Requirements
 

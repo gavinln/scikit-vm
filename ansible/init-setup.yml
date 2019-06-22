@@ -3,16 +3,16 @@
   apt: upgrade=dist
 
 - name: install pip3
-  apt: name=python3-pip state=installed
+  apt: name=python3-pip state=present
 
   # - name: install python dev
-  #   apt: name=python-dev state=installed
+  #   apt: name=python-dev state=present
 
 - name: install subversion
-  apt: name=subversion state=installed
+  apt: name=subversion state=present
 
   # - name: Install Pip
-  #   apt: name=python-pip state=installed
+  #   apt: name=python-pip state=present
 
   # - name: Install pyopenssl for InsecurePlatform warning
   #   pip: name=pyopenssl state=present

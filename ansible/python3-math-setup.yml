@@ -3,19 +3,16 @@
   pip: name=numpy state=present
 
 - name: install libopenblas-dev
-  apt: name=libopenblas-dev state=installed
+  apt: name=libopenblas-dev state=present
 
 - name: install liblapack-dev
-  apt: name=liblapack-dev state=installed
+  apt: name=liblapack-dev state=present
 
 - name: install gfortran
-  apt: name=gfortran state=installed
+  apt: name=gfortran state=present
 
 - name: install scipy
   pip: name=scipy state=present
-
-- name: install theano
-  pip: name=theano state=present
 
 - name: install sklearn
   pip: name=sklearn state=present
@@ -29,6 +26,9 @@
 - name: install jupyter notebook extensions
   pip: name=jupyter_contrib_nbextensions state=present
 
+- name: install jupytext
+  pip: name=jupytext state=present
+
 - name: install pydot3
   pip: name=pydot3 state=present
 
@@ -36,7 +36,7 @@
   pip: name=watermark state=present
 
 - name: Install libjpeg8-dev for pillow
-  apt: pkg=libjpeg8-dev state=installed
+  apt: pkg=libjpeg8-dev state=present
 
 - name: install Pillow
   pip: name=pillow state=present

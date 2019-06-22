@@ -15,12 +15,12 @@
     - geerlingguy.ntp
 
   tasks:
-    - import_tasks: init_setup.yml
-    - import_tasks: cli_setup.yml
-    - import_tasks: python3_setup.yml
-    - import_tasks: python3_math_setup.yml
-    - import_tasks: python3_parallel_setup.yml
-    - import_tasks: python3_nlp.yml
-    - import_tasks: jupyterlab-py3-setup.yml
-    - import_tasks: py3-plot-setup.yml
-#     - import_tasks: r-setup.yml
+    - import_tasks: init-setup.yml
+    - import_tasks: cli-setup.yml
+    - import_tasks: python3-setup.yml
+    - import_tasks: python3-math-setup.yml
+    - import_tasks: python3-parallel-setup.yml
+    - import_tasks: python3-nlp.yml
+    - import_tasks: python3-plot-setup.yml
+#    - import_tasks: jupyterlab-python3-setup.yml
+#    - import_tasks: r-setup.yml

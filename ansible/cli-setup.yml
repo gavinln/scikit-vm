@@ -1,22 +1,22 @@
 ---
 - name: Install git
-  apt: name=git state=installed
+  apt: name=git state=present
 
 - name: Install tree
-  apt: name=tree state=installed
+  apt: name=tree state=present
 
 - name: Install ag
-  apt: name=silversearcher-ag state=installed
+  apt: name=silversearcher-ag state=present
 
 - name: Install jq
-  apt: name=jq state=installed
+  apt: name=jq state=present
 
 - name: Install autojump
-  apt: name=autojump state=installed
+  apt: name=autojump state=present
   register: autojump_status
 
 - name: Install vim
-  apt: name=vim state=installed
+  apt: name=vim state=present
 
 - name: copy autojump profile
   copy:

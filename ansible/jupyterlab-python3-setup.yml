@@ -3,10 +3,10 @@
   pip: name=jupyterlab state=present
 
 - name: install nodejs - for jupyterlab extensions
-  apt: name=nodejs state=installed
+  apt: name=nodejs state=present
 
 - name: install npm - for jupyterlab extensions
-  apt: name=npm state=installed
+  apt: name=npm state=present
 
 - name: install jupyterlab toc plugin
   command: jupyter labextension install @jupyterlab/toc
@@ -31,9 +31,6 @@
 
 - name: install jupyterlab extension for hvplot
   command: jupyter labextension install @pyviz/jupyterlab_pyviz
-
-- name: install jupytext
-  pip: name=jupytext state=present
 
   # jupyter labextension install jupyterlab-flake8  # false positives
   # jupyter labextension install @jupyterlab/git  # does not work

@@ -1,10 +1,10 @@
 ---
 - name: Install pip
-  apt: name=python-pip state=installed
+  apt: name=python-pip state=present
   when: ansible_os_family == "Debian"
 
 - name: Install pip
-  yum: name=python-pip state=installed
+  yum: name=python-pip state=present
   when: ansible_os_family == "RedHat"
 
 - name: Install awscli
@@ -14,19 +14,19 @@
   pip: name=boto3 state=present
 
 - name: Install R
-  apt: name=r-base state=installed
+  apt: name=r-base state=present
   when: ansible_os_family == "Debian"
 
 - name: Install gdebi-core
-  apt: name=gdebi-core state=installed
+  apt: name=gdebi-core state=present
   when: ansible_os_family == "Debian"
 
 - name: Install libcurl
-  apt: name=libcurl4-openssl-dev state=installed
+  apt: name=libcurl4-openssl-dev state=present
   when: ansible_os_family == "Debian"
 
 - name: Install libxml2
-  apt: name=libxml2-dev state=installed
+  apt: name=libxml2-dev state=present
   when: ansible_os_family == "Debian"
 
 - name: install urllib3 (insecure platform warning)

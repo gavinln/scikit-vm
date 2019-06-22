@@ -15,6 +15,8 @@ Vagrant.configure("2") do |config|
   # config.vm.box = "ubuntu/xenial64"
   config.vm.box = "ubuntu/bionic64"
 
+  config.vm.box_version = "20190621.0.0"
+
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
@@ -49,27 +51,21 @@ Vagrant.configure("2") do |config|
       # vb.gui = true
       vb.memory = "4096"
       vb.cpus = "2"
-
-      # if Vagrant::Util::Platform.windows? then
-      #     # Fix for slow external network connections for Windows 10
-      #     vb.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
-      #     vb.customize ['modifyvm', :id, '--natdnsproxy1', 'on']
-      # end
     end
 
     machine.vm.hostname = "scikit-vm"
     machine.vm.network "private_network", ip: "192.168.33.10"
     # machine.vm.network "public_network"
 
-    # machine.vm.provision "shell" do |sh|
-    #   sh.path = "ansible/ansible_install.sh"
-    #   sh.args = "ansible/playbook.yml"
-    # end
+    machine.vm.provision "shell" do |sh|
+      sh.path = "ansible/ansible_install.sh"
+    end
 
     machine.vm.provision "ansible_local" do |ansible|
+      ansible.install = :false
       ansible.compatibility_mode = "2.0"
       ansible.install_mode = "pip"
-      ansible.version = "2.4.4.0"
+      ansible.version = "2.7.9"
       ansible.provisioning_path = "/vagrant/ansible"
       ansible.galaxy_role_file = "requirements.yml"
       ansible.galaxy_roles_path = "/vagrant/ansible/roles"
