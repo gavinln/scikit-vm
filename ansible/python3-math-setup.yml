@@ -11,8 +11,11 @@
 - name: install gfortran
   apt: name=gfortran state=present
 
+  # from scipy.misc import factorial
+  # causes error: ImportError: cannot import name 'factorial'
+  # https://stackoverflow.com/questions/56283294/importerror-cannot-import-name-factorial
 - name: install scipy
-  pip: name=scipy state=present
+  pip: name=scipy==1.2 state=present
 
 - name: install sklearn
   pip: name=sklearn state=present

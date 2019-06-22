@@ -64,19 +64,16 @@ vagrant ssh
 ```
 jupyter contrib nbextension install --user
 ```
+5. Go to the Edit menu nbextensions config option to setup plugins
 
-5. Install vim extension (optional)
+6. Some useful plugins
 
-```
-cd $(jupyter --data-dir)/nbextensions
-git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
-```
-
-6. Install Jupyterlab vim extension
-
-```
-sudo jupyter labextension install jupyterlab_vim
-```
+    * Code prettify
+    * Collapsible Headings
+    * Comment/Uncomment Hotkey
+    * ExecuteTime
+    * Select CodeMirror Keymap
+    * Table of Contents (2)
 
 7. Start the Jupyter notebook or Jupyterlab environment
 
@@ -84,13 +81,20 @@ sudo jupyter labextension install jupyterlab_vim
 /vagrant/scripts/jupyter_notebook.sh
 ```
 
+8. Open the notebook in the browser at the URL
+
+### Jupyterlab
+
+1. Install Jupyterlab vim extension (optional)
+
+```
+sudo jupyter labextension install jupyterlab_vim
+```
+2. Start the Jupyterlab environment
+
 ```bash
 /vagrant/scripts/lab_notebook.sh
 ```
-
-8. Open the notebook in the browser at the URL
-
-9. Open the **Index - Start Here** notebook  first
 
 ## Scikit-learn notebooks
 
@@ -215,9 +219,14 @@ rm -rf px-plot/plotly_express
 ```
 
 3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks
-   will be in the plotly_express directory.
+   will be in the px-plot directory.
 
-https://towardsdatascience.com/its-2019-make-your-data-visualizations-interactive-with-plotly-b361e7d45dc6
+An introduction to plotly express is given in this [article][530]. Alternative
+libraries that wrap the low-level Plotly libraries are discussed on this
+[page][540].
+
+[530]: https://medium.com/@plotlygraphs/introducing-plotly-express-808df010143d
+[540]: https://towardsdatascience.com/its-2019-make-your-data-visualizations-interactive-with-plotly-b361e7d45dc6
 
 https://github.com/jonmmease/plotly_ipywidget_notebooks
 
