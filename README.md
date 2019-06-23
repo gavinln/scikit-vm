@@ -232,6 +232,27 @@ https://github.com/jonmmease/plotly_ipywidget_notebooks
 
 ### Seaborn
 
+## Miscellaneous
+
+To generate a requirements.txt file run the following
+
+```
+python ansible\convert-ansible-to-requirements.py  > requirements.txt
+```
+
+To create a Pipfile on the Windows subsystem for Linux and choose the correct
+Python
+
+```
+pipenv --python $(which python3)
+```
+
+To install the libraries manually type:
+
+```
+pipenv install sklearn pandas jupyter
+```
+
 ## Requirements
 
 The following software is needed to get the software from github and run
