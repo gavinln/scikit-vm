@@ -6,7 +6,9 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 ROOT_DIR=/vagrant
 export PYTHONPATH=$ROOT_DIR/python
-IP=$(hostname -I | awk  '{ print $2 }')
+
+# use ip address starting with 10.0.
+IP=$(hostname -I | grep -o '10\.0\.[0-9\.]\+')
 
 JUPYTER_CMD="jupyter notebook --port=8888 --ip=$IP --no-browser"
 
