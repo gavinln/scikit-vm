@@ -253,6 +253,8 @@ To install the libraries manually type:
 pipenv install sklearn pandas jupyter
 ```
 
+ls
+
 ## Requirements
 
 The following software is needed to get the software from github and run
