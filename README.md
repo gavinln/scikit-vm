@@ -245,6 +245,7 @@ Python
 
 ```
 pipenv --python $(which python3)
+pipenv install --python /usr/bin/python3
 ```
 
 To install the libraries manually type:
