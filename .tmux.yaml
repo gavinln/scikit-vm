@@ -1,0 +1,17 @@
+session_name: scikit-vm
+start_directory: "."
+windows:
+- window_name: jupyter
+  layout: even-horizontal
+  focus: true
+  shell_command_before:
+    - echo initial command
+  panes:
+    - shell_command: echo "started jupyter in other notebook"
+      focus: true
+    - pipenv run bash ./scripts/jupyter_notebook.sh
+- window_name: git
+  layout: even-horizontal
+  panes:
+    - shell_command: git repl
+    - vifm .
