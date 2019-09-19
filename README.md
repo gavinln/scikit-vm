@@ -232,6 +232,18 @@ https://github.com/jonmmease/plotly_ipywidget_notebooks
 
 ### Seaborn
 
+## Creating dashboards
+
+The dashboards not only display data but also accept simple user inputs.
+
+* [Dash][600]
+* [Voila][610]
+* [Panel][620]
+
+[600]: https://github.com/plotly/dash
+[610]: https://github.com/QuantStack/voila
+[620]: https://github.com/pyviz/panel
+
 ## Miscellaneous
 
 To generate a requirements.txt file run the following
@@ -253,8 +265,6 @@ To install the libraries manually type:
 ```
 pipenv install sklearn pandas jupyter
 ```
-
-ls
 
 ## Requirements
 
