@@ -18,10 +18,10 @@ pydot3 = "*"
 matplotlib = "*"
 statsmodels = "*"
 seaborn = "*"
-plotly-express = "*"
 flake8 = "*"
 yapf = "*"
 Pillow = "*"
+plotly = "*"
 
 [requires]
 python_version = "3.7"
