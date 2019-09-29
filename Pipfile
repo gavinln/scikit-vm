@@ -7,12 +7,9 @@ verify_ssl = true
 
 [packages]
 numpy = "*"
-scipy = "==1.2"
+scipy = "*"
 sklearn = "*"
 pandas = "*"
-jupyter = "*"
-jupyter-contrib-nbextensions = "*"
-jupytext = "*"
 watermark = "*"
 pydot3 = "*"
 matplotlib = "*"
@@ -22,6 +19,14 @@ flake8 = "*"
 yapf = "*"
 Pillow = "*"
 plotly = "*"
+tornado = "==5.1.1"
+jupyter = "*"
+jupyter-contrib-nbextensions = "*"
+jupytext = "*"
+jupyterlab = "*"
+nbresuse = "*"
+jupyterlab-code-formatter = "*"
+jupyterlab-git = "*"
 
 [requires]
 python_version = "3.7"

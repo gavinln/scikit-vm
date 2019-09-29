@@ -59,14 +59,17 @@ vagrant up
 vagrant ssh
 ```
 
-4. Install Jupyter notebook extensions
+### Jupyter notebook
+
+1. Install Jupyter notebook extensions
 
 ```
 jupyter contrib nbextension install --user
 ```
-5. Go to the Edit menu nbextensions config option to setup plugins
 
-6. Some useful plugins
+2. Go to the Edit menu nbextensions config option to setup plugins
+
+3. Some useful plugins
 
     * Code prettify
     * Collapsible Headings
@@ -75,26 +78,62 @@ jupyter contrib nbextension install --user
     * Select CodeMirror Keymap
     * Table of Contents (2)
 
-7. Start the Jupyter notebook or Jupyterlab environment
+4. Start the Jupyter notebook or Jupyterlab environment
 
 ```bash
 /vagrant/scripts/jupyter_notebook.sh
 ```
 
-8. Open the notebook in the browser at the URL
+5. Open the notebook in the browser at the URL
 
 ### Jupyterlab
 
-1. Install Jupyterlab vim extension (optional)
+1. Enable the server extension
 
 ```
-sudo jupyter labextension install jupyterlab_vim
-```
-2. Start the Jupyterlab environment
+jupyter labextension install @jupyterlab/shortcutui
+jupyter labextension install @jupyter-widgets/Jupyterlab-manager
+jupyter labextension install @Jupyterlab/shortcutui
+jupyter labextension install @Jupyterlab/toc
+jupyter labextension install jupyterlab-jupytext
+jupyter labextension install jupyterlab_vim
 
-```bash
-/vagrant/scripts/lab_notebook.sh
+# pip install jupyterlab-git
+jupyter labextension install @jupyterlab/git
+jupyter labextension install nbdime-jupyterlab
+# pip install nbresuse  # displays memory usage on the bottom status bar
+
+# pip install jupyterlab_code_formatter
+jupyter labextension install @ryantam626/jupyterlab_code_formatter
+# jupyter serverextension enable --py jupyterlab_code_formatter
 ```
+
+2. Setup the keyboard shortcut in the "Advanced Settings Editor"
+
+```
+{
+    "shortcuts": [{
+            "command": "jupyterlab_code_formatter:yapf",
+            "keys": ["Ctrl Shift G"],
+            "selector": ".jp-Notebook.jp-mod-editMode"
+        }
+    ]
+}
+```
+
+1. Start the Jupyter lab interface
+./scripts/lab-jupyter.sh
+
+2. Install these Jupyter extensions
+
+    * @jupyter-widgets/Jupyterlab-manager
+    * @Jupyterlab/shortcutui
+    * @Jupyterlab/toc
+    * jupyterlab-jupytext
+    * jupyterlab_vim
+    * @ryantam626/jupyterlab_code_formatter
+
+[nbresuse](https://github.com/yuvipanda/nbresuse)
 
 ## Scikit-learn notebooks
 
@@ -232,6 +271,20 @@ https://github.com/jonmmease/plotly_ipywidget_notebooks
 
 ### Seaborn
 
+### Lolviz
+
+Visualize data structures
+
+https://github.com/parrt/lolviz
+
+### Bokeh
+
+### Dimensionality reduction
+
+Dimensionality reduction similar to t-SNE
+
+[Uniform Manifold Approximation and Projection](https://github.com/lmcinnes/umap)
+
 ## Creating dashboards
 
 The dashboards not only display data but also accept simple user inputs.
@@ -243,6 +296,14 @@ The dashboards not only display data but also accept simple user inputs.
 [600]: https://github.com/plotly/dash
 [610]: https://github.com/QuantStack/voila
 [620]: https://github.com/pyviz/panel
+
+## Extending pandas
+
+* [Cyberpandas][700] - supports IP addresses
+* [GeoPandas][710] - supports geographic data
+
+[700]: https://github.com/ContinuumIO/cyberpandas
+[710]: https://github.com/geopandas/geopandas
 
 ## Miscellaneous
 
@@ -263,8 +324,33 @@ pipenv install --python /usr/bin/python3
 To install the libraries manually type:
 
 ```
-pipenv install sklearn pandas jupyter
+pipenv install numpy 
+pipenv install scipy
+pipenv install sklearn 
+pipenv install pandas 
+pipenv install watermark 
+pipenv install pydot3 
+pipenv install matplotlib 
+pipenv install statsmodels 
+pipenv install seaborn 
+pipenv install flake8 
+pipenv install yapf 
+pipenv install Pillow 
+pipenv install plotly 
+pipenv install tornado==5.1.1
+pipenv install jupyter 
+pipenv install jupyter-contrib-nbextensions 
+pipenv install jupytext 
+pipenv install jupyterlab 
+pipenv install nbresuse 
 ```
+
+### Jupyterlab tips
+
+* [Working efficienctly with Jupyterlab](https://florianwilhelm.info/2018/11/working_efficiently_with_jupyter_lab/)
+* [Upgrading to Jupyterlab](https://hackersandslackers.com/upgrading-to-jupyter-lab-on-ubuntu/)
+* [Jupyterlab libraries & resources](https://github.com/markusschanta/awesome-jupyter#jupyterlab-extensions)
+* [Convert notebook to Confluence](https://github.com/Valassis-Digital-Media/nbconflux)
 
 ## Requirements
 
