@@ -97,10 +97,8 @@ jupyter labextension install @Jupyterlab/shortcutui
 jupyter labextension install @Jupyterlab/toc
 jupyter labextension install jupyterlab-jupytext
 jupyter labextension install jupyterlab_vim
+jupyter labextension install @krassowski/jupyterlab_go_to_definition
 
-# pip install jupyterlab-git
-jupyter labextension install @jupyterlab/git
-jupyter labextension install nbdime-jupyterlab
 # pip install nbresuse  # displays memory usage on the bottom status bar
 
 # pip install jupyterlab_code_formatter

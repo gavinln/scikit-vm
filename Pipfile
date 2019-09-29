@@ -26,7 +26,6 @@ jupytext = "*"
 jupyterlab = "*"
 nbresuse = "*"
 jupyterlab-code-formatter = "*"
-jupyterlab-git = "*"
 
 [requires]
 python_version = "3.7"
