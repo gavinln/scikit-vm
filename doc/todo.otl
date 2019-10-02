@@ -1,0 +1,5 @@
+[X] Uninstall aiohttp
+[_] Knowledge repo
+    [X] Install software
+	[_] Test pushing to a remote repo
+	[_] Setup a Sqlite database

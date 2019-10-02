@@ -26,14 +26,6 @@ following libraries.
 [70]: http://pandas.pydata.org/
 [80]: http://scikit-learn.org/stable/
 
-### Visualization libraries
-
-* [Matplotlib][100]
-* [Seaborn][110]
-
-[100]: http://matplotlib.org/
-[110]: http://stanford.edu/~mwaskom/software/seaborn/
-
 There are [Ansible][120] scripts that automatically install the software when
 the VM is started.
 
@@ -81,7 +73,7 @@ jupyter contrib nbextension install --user
 4. Start the Jupyter notebook or Jupyterlab environment
 
 ```bash
-/vagrant/scripts/jupyter_notebook.sh
+/vagrant/scripts/notebook-jupyter.sh
 ```
 
 5. Open the notebook in the browser at the URL
@@ -119,10 +111,10 @@ jupyter labextension install @ryantam626/jupyterlab_code_formatter
 }
 ```
 
-1. Start the Jupyter lab interface
+3. Start the Jupyter lab interface
 ./scripts/lab-jupyter.sh
 
-2. Install these Jupyter extensions
+4. Install these Jupyter extensions
 
     * @jupyter-widgets/Jupyterlab-manager
     * @Jupyterlab/shortcutui
@@ -230,7 +222,19 @@ svn export https://github.com/scikit-learn/scikit-learn/trunk/doc/tutorial/text_
 
 ## Plotting
 
-### Interactive charts with Plotly
+### Matplotlib
+
+* [Matplotlib][400]
+
+[400]: http://matplotlib.org/
+
+### Seaborn
+
+* [Seaborn][410]
+
+[410]: http://stanford.edu/~mwaskom/software/seaborn/
+
+### Plotly
 
 [Plotly.js][500] is an open source Javascript plotting library.
 [Plotly.py][510] is a Python wrapper over the Plotly javascript plotting
@@ -242,22 +246,6 @@ transfer data to Plotly.
 [510]: https://plot.ly/python/
 [520]: https://www.plotly.express/
 
-1. Change to the notebooks directory
-
-```
-cd /vagrant/notebooks
-```
-
-2. Get the notebooks into the directory px-plot directory
-
-```
-svn export https://github.com/plotly/plotly_express/branches/gh-pages px-plot
-rm -rf px-plot/plotly_express
-```
-
-3. In your Jupyter notebook list at http://192.168.33.10:8888/ the notebooks
-   will be in the px-plot directory.
-
 An introduction to plotly express is given in this [article][530]. Alternative
 libraries that wrap the low-level Plotly libraries are discussed on this
 [page][540].
@@ -266,8 +254,6 @@ libraries that wrap the low-level Plotly libraries are discussed on this
 [540]: https://towardsdatascience.com/its-2019-make-your-data-visualizations-interactive-with-plotly-b361e7d45dc6
 
 https://github.com/jonmmease/plotly_ipywidget_notebooks
-
-### Seaborn
 
 ### Lolviz
 
@@ -302,6 +288,74 @@ The dashboards not only display data but also accept simple user inputs.
 
 [700]: https://github.com/ContinuumIO/cyberpandas
 [710]: https://github.com/geopandas/geopandas
+
+## Jupyterlab tips
+
+* [Working efficienctly with Jupyterlab](https://florianwilhelm.info/2018/11/working_efficiently_with_jupyter_lab/)
+* [Upgrading to Jupyterlab](https://hackersandslackers.com/upgrading-to-jupyter-lab-on-ubuntu/)
+* [Jupyterlab libraries & resources](https://github.com/markusschanta/awesome-jupyter#jupyterlab-extensions)
+* [Convert notebook to Confluence](https://github.com/Valassis-Digital-Media/nbconflux)
+* [Python library: Markdown to HTML](https://github.com/Python-Markdown/markdown)
+* [Knowledge repo](https://github.com/airbnb/knowledge-repo)
+
+## Knowledge repo
+
+The [Knowledge repo][800] from Airbnb is a curated knowledge sharing platform
+for data scientists and other technical professions. 
+
+[800]: https://github.com/airbnb/knowledge-repo/
+
+Detailed instructions for setting up a Knowledge repo are documented [here][810]
+
+[810]: https://daniel.perez.sh/blog/2018/knowledge-repo-setup/
+
+1. Display the knowledge repo version
+
+```
+knowledge_repo --version
+```
+
+2. Create a knowledge-repo
+
+```
+knowledge_repo --repo knowledge-repo init
+```
+
+3. Start the knowledge repo
+
+```
+knowledge_repo --repo knowledge-repo runserver
+```
+
+4. Create a test Jupyter notebook post
+
+```
+knowledge_repo --repo knowledge-repo create ipynb test.ipynb
+```
+
+5. Start the Jupyter notebook
+
+```
+jupyter notebook --no-browser
+```
+
+6. Add the post to the repo
+
+```
+knowledge_repo --repo knowledge-repo add -p test test.ipynb
+```
+
+7. Preview the post by ruuning the server again
+
+```
+knowledge_repo --repo knowledge-repo runserver
+```
+
+8. Submit the post
+
+```
+knowledge_repo --repo knowledge-repo submit test.kp
+```
 
 ## Miscellaneous
 
@@ -341,14 +395,8 @@ pipenv install jupyter-contrib-nbextensions
 pipenv install jupytext 
 pipenv install jupyterlab 
 pipenv install nbresuse 
+pipenv install "knowledge-repo[all]"
 ```
-
-### Jupyterlab tips
-
-* [Working efficienctly with Jupyterlab](https://florianwilhelm.info/2018/11/working_efficiently_with_jupyter_lab/)
-* [Upgrading to Jupyterlab](https://hackersandslackers.com/upgrading-to-jupyter-lab-on-ubuntu/)
-* [Jupyterlab libraries & resources](https://github.com/markusschanta/awesome-jupyter#jupyterlab-extensions)
-* [Convert notebook to Confluence](https://github.com/Valassis-Digital-Media/nbconflux)
 
 ## Requirements
 

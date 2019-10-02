@@ -26,6 +26,7 @@ jupytext = "*"
 jupyterlab = "*"
 nbresuse = "*"
 jupyterlab-code-formatter = "*"
+knowledge-repo = {extras = ["all"],version = "*"}
 
 [requires]
 python_version = "3.7"
