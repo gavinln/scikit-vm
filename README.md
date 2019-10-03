@@ -281,6 +281,10 @@ The dashboards not only display data but also accept simple user inputs.
 [610]: https://github.com/QuantStack/voila
 [620]: https://github.com/pyviz/panel
 
+## Additionaly Jupyter libraries
+
+[Qgrid][https://github.com/quantopian/qgrid]
+
 ## Extending pandas
 
 * [Cyberpandas][700] - supports IP addresses

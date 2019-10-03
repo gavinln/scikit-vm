@@ -27,6 +27,8 @@ jupyterlab = "*"
 nbresuse = "*"
 jupyterlab-code-formatter = "*"
 knowledge-repo = {extras = ["all"],version = "*"}
+faker = "*"
+qgrid = "*"
 
 [requires]
 python_version = "3.7"

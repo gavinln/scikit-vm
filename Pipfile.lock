@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "359c07adaba78312fb7e6ead3449ab6dbf4f36797eeacfe29859d9ecfde287cf"
+            "sha256": "a1d6f4ac8e7f0f560a2b3565d9a7d7a2ce16edd101b902094ff1789d9d980a09"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -35,6 +35,13 @@
                 "sha256:bbbf4b1e5cd2bdb08f915895b51081c041bac22394fdfcfdfbe9f14b77c08bf2"
             ],
             "version": "==0.1.0"
+        },
+        "beakerx": {
+            "hashes": [
+                "sha256:f4fcee4bd640a175783bfcf70fdd9f599b528808183bdf1993913e32bd759be7"
+            ],
+            "index": "pypi",
+            "version": "==1.4.1"
         },
         "beautifulsoup4": {
             "hashes": [
@@ -172,6 +179,14 @@
             ],
             "version": "==1.1.6"
         },
+        "faker": {
+            "hashes": [
+                "sha256:45cc9cca3de8beba5a2da3bd82a6e5544f53da1a702645c8485f682366c15026",
+                "sha256:a6459ff518d1fc6ee2238a7209e6c899517872c7e1115510279033ffe6fe8ef3"
+            ],
+            "index": "pypi",
+            "version": "==2.0.2"
+        },
         "flake8": {
             "hashes": [
                 "sha256:19241c1cbc971b9962473e4438a2ca19749a7dd002dd1a946eaba171b4114548",
@@ -234,10 +249,10 @@
         },
         "gitpython": {
             "hashes": [
-                "sha256:947cc75913e7b6da108458136607e2ee0e40c20be1e12d4284e7c6c12956c276",
-                "sha256:d2f4945f8260f6981d724f5957bc076398ada55cb5d25aaee10108bcdc894100"
+                "sha256:631263cc670aa56ce3d3c414cf0fe2e840f2e913514b138ea28d88a477bbcd21",
+                "sha256:6e97b9f0954807f30c2dd8e3165731ed6c477a1b365f194b69d81d7940a08332"
             ],
-            "version": "==3.0.2"
+            "version": "==3.0.3"
         },
         "gunicorn": {
             "hashes": [
@@ -885,6 +900,13 @@
             ],
             "version": "==18.1.0"
         },
+        "qgrid": {
+            "hashes": [
+                "sha256:98cb1184bd53b9cb27ef88d1b8f3f282a328760357281c402d4c53ac277d1c6b"
+            ],
+            "index": "pypi",
+            "version": "==1.1.1"
+        },
         "qtconsole": {
             "hashes": [
                 "sha256:40d5d8e00d070ea266dbf6f0da74c4b9597b8b8d67cd8233c3ffd8debf923703",
@@ -1078,6 +1100,13 @@
                 "sha256:b694b3d9288dbd81685c5d2e7140b81365d46c29f5db4bc659de5aa6b98780f8"
             ],
             "version": "==0.4.2"
+        },
+        "text-unidecode": {
+            "hashes": [
+                "sha256:1311f10e8b895935241623731c2ba64f4c455287888b18189350b67134a822e8",
+                "sha256:bad6603bb14d279193107714b288be206cac565dfa49aa5b105294dd5c4aab93"
+            ],
+            "version": "==1.3"
         },
         "tornado": {
             "hashes": [
