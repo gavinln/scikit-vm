@@ -402,6 +402,20 @@ pipenv install nbresuse
 pipenv install "knowledge-repo[all]"
 ```
 
+### AI tools
+
+Articles
+
+* [AI developer stack](https://blog.fiddler.ai/2019/06/ai-needs-a-new-developer-stack)
+
+Tools
+
+* [mlflow](https://github.com/mlflow/mlflow) - manage machine learning models - 4761 stars
+* [DVC](https://github.com/iterative/dvc) - data version control  - 3662 stars
+* [Pachyderm](https://github.com/pachyderm/pachyderm) - reproducible data science using Docker - 3965 stars
+* [streamlit](https://github.com/streamlit/streamlit) - tools for machine learning - 1389 stars
+
+
 ## Requirements
 
 The following software is needed to get the software from github and run

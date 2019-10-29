@@ -14,6 +14,6 @@ IP=$(hostname -I | grep -o '10\.0\.[0-9\.]\+')
 
 JUPYTER_CMD="jupyter notebook --port=8888 --ip=$IP --no-browser"
 
-BASIC_NOTEBOOKS=$SCRIPT_DIR/../notebooks
+BASIC_NOTEBOOKS=$SCRIPT_DIR/..
 
 $JUPYTER_CMD --notebook-dir=$BASIC_NOTEBOOKS

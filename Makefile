@@ -30,4 +30,4 @@ jupyter:
 	bash ./scripts/jupyter_notebook.sh
 
 tmux:
-	tmuxp load .tmux.yaml
+	tmuxp load tmux.yaml

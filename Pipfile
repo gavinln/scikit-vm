@@ -29,6 +29,10 @@ jupyterlab-code-formatter = "*"
 knowledge-repo = {extras = ["all"],version = "*"}
 faker = "*"
 qgrid = "*"
+hvplot = "*"
+intake = "*"
+intake-parquet = "*"
+bqplot = "*"
 
 [requires]
 python_version = "3.7"

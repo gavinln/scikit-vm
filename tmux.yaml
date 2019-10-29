@@ -9,7 +9,7 @@ windows:
   panes:
     - shell_command: echo "started jupyter in other notebook"
       focus: true
-    - pipenv run bash ./scripts/jupyter_notebook.sh
+    - pipenv run bash ./scripts/notebook-jupyter.sh
 - window_name: git
   layout: even-horizontal
   panes:
