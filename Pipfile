@@ -33,6 +33,7 @@ hvplot = "*"
 intake = "*"
 intake-parquet = "*"
 bqplot = "*"
+autopep8 = "*"
 
 [requires]
 python_version = "3.7"

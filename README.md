@@ -363,11 +363,13 @@ knowledge_repo --repo knowledge-repo submit test.kp
 
 ## Miscellaneous
 
-To generate a requirements.txt file run the following
+### Generate requirements.txt file
 
 ```
 python ansible\convert-ansible-to-requirements.py  > requirements.txt
 ```
+
+### Choose the correct Python version
 
 To create a Pipfile on the Windows subsystem for Linux and choose the correct
 Python
@@ -376,6 +378,8 @@ Python
 pipenv --python $(which python3)
 pipenv install --python /usr/bin/python3
 ```
+
+### Install libraries manually
 
 To install the libraries manually type:
 
@@ -400,6 +404,60 @@ pipenv install jupytext
 pipenv install jupyterlab 
 pipenv install nbresuse 
 pipenv install "knowledge-repo[all]"
+```
+
+### Clean Jupyter notebooks
+
+1. Convert notebook to python file
+
+```
+jupytext --to py 19_jupyter-widgets.ipynb
+```
+
+2. Run flake8 to check coding conventions
+
+```
+flake8 19_jupyter-widgets.ipynb
+```
+
+3. Automatically fix code style
+
+```
+autopep8 -i -a 19_jupyter-widgets.ipynb
+```
+
+5. Setup flake8 in vim
+
+```
+:set makeprg=flake8\ %
+:make
+:clast
+:cprevious
+```
+4. Convert back to notebook
+
+```
+jupytext --to ipynb 19_jupyter-widgets.ipynb
+```
+
+### Vifm filtering files
+
+1. Add a filter to hide files
+
+```
+:filter {*.py}
+```
+
+2. Toggle filter to only show files ending in py
+
+```
+:filter!
+```
+
+3. Show the value of the filter
+
+```
+:filter?
 ```
 
 ### AI tools
