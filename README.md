@@ -90,6 +90,7 @@ jupyter labextension install @Jupyterlab/toc
 jupyter labextension install jupyterlab-jupytext
 jupyter labextension install jupyterlab_vim
 jupyter labextension install @krassowski/jupyterlab_go_to_definition
+jupyter labextension install @aquirdturtle/collapsible_headings
 
 # pip install nbresuse  # displays memory usage on the bottom status bar
 
@@ -111,10 +112,12 @@ jupyter labextension install @ryantam626/jupyterlab_code_formatter
 }
 ```
 
-3. Start the Jupyter lab interface
+4. Install the [Jupyter language server](https://github.com/krassowski/jupyterlab-lsp)
+
+5. Start the Jupyter lab interface
 ./scripts/lab-jupyter.sh
 
-4. Install these Jupyter extensions
+6. Install these Jupyter extensions
 
     * @jupyter-widgets/Jupyterlab-manager
     * @Jupyterlab/shortcutui

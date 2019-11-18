@@ -34,6 +34,11 @@ intake = "*"
 intake-parquet = "*"
 bqplot = "*"
 autopep8 = "*"
+jupyter-lsp = "*"
+python-language-server = {extras = ["all"],version = "*"}
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
