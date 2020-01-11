@@ -284,9 +284,15 @@ The dashboards not only display data but also accept simple user inputs.
 [610]: https://github.com/QuantStack/voila
 [620]: https://github.com/pyviz/panel
 
-## Additionaly Jupyter libraries
+## Additional Jupyter libraries
 
 [Qgrid][https://github.com/quantopian/qgrid]
+
+## Serving machine learning models
+
+[Scikit-learn model with ONNX and FastAPI](https://medium.com/@nico.axtmann95/deploying-a-scikit-learn-model-with-onnx-und-fastapi-1af398268915)
+
+[Porting Flask to FastAPI](https://www.pluralsight.com/tech-blog/porting-flask-to-fastapi-for-ml-model-serving/)
 
 ## Extending pandas
 
