@@ -372,6 +372,14 @@ knowledge_repo --repo knowledge-repo submit test.kp
 
 ## Miscellaneous
 
+### Machine learning operational details
+
+1. [Feature store](https://github.com/gojek/feast/) from Google and GoJEK
+
+2. Machine learning [formats](https://towardsdatascience.com/guide-to-file-formats-for-machine-learning-columnar-training-inferencing-and-the-feature-store-2e0c3d18d4f9)
+
+3. Managing [ML experiements](https://medium.com/@hadyelsahar/how-do-you-manage-your-machine-learning-experiments-ab87508348ac)
+
 ### Generate requirements.txt file
 
 ```
