@@ -128,6 +128,27 @@ jupyter labextension install @ryantam626/jupyterlab_code_formatter
 
 [nbresuse](https://github.com/yuvipanda/nbresuse)
 
+#### Other extensions
+
+From the PyData [presentation](https://www.youtube.com/watch?v=3pdrzhny9Lc)
+
+    * jupyterlab-git
+    * nbdime
+    * jupyterlab_code_formatter
+    * jupyterlab-toc
+    * jupyterlab-quickopen
+    * jupyterlab-sidecar
+    * jupyterlab-drawio
+    * jupyterlab-topbar
+    * jupyterlab-sql
+    * jupyterlab-celltags
+    * jupyterlab-go-to-definition
+    * jupyterlab-lsp
+    * voila
+    * jupyterlab-matplotlib
+    * jupyterlab-variableinspector
+    * jupyterlab-templates
+
 ## Scikit-learn notebooks
 
 ### Scipy 2018
@@ -310,6 +331,7 @@ The dashboards not only display data but also accept simple user inputs.
 * [Convert notebook to Confluence](https://github.com/Valassis-Digital-Media/nbconflux)
 * [Python library: Markdown to HTML](https://github.com/Python-Markdown/markdown)
 * [Knowledge repo](https://github.com/airbnb/knowledge-repo)
+* [Best practices with notebooks](https://cloud.google.com/blog/products/ai-machine-learning/best-practices-that-can-improve-the-life-of-any-developer-using-jupyter-notebooks)
 
 ## Knowledge repo
 
@@ -489,7 +511,6 @@ Tools
 * [DVC](https://github.com/iterative/dvc) - data version control  - 3662 stars
 * [Pachyderm](https://github.com/pachyderm/pachyderm) - reproducible data science using Docker - 3965 stars
 * [streamlit](https://github.com/streamlit/streamlit) - tools for machine learning - 1389 stars
-
 
 ## Requirements
 
