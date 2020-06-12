@@ -281,11 +281,28 @@ https://github.com/jonmmease/plotly_ipywidget_notebooks
 
 ### Lolviz
 
-Visualize data structures
+[Visualize data][550] structures
 
-https://github.com/parrt/lolviz
+[550]: https://github.com/parrt/lolviz
 
 ### Bokeh
+
+Python [visualization library][560]
+
+[560]: https://bokeh.org/
+
+### Plotnine
+
+[Grammar of graphics][570] for Python
+
+[570]: https://github.com/has2k1/plotnine
+
+
+### Dexplot
+
+A [plotting library][580] like Seaborn that wraps matplotlib and data frames.
+
+[580]: https://github.com/dexplo/dexplot
 
 ### Dimensionality reduction
 
