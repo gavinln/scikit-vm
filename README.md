@@ -528,6 +528,7 @@ Tools
 * [DVC](https://github.com/iterative/dvc) - data version control  - 3662 stars
 * [Pachyderm](https://github.com/pachyderm/pachyderm) - reproducible data science using Docker - 3965 stars
 * [streamlit](https://github.com/streamlit/streamlit) - tools for machine learning - 1389 stars
+* [scikit libraries](https://towardsdatascience.com/5-obscure-python-libraries-every-data-scientist-should-know-3651bf5d3be3)
 
 ## Requirements
 
