@@ -540,13 +540,17 @@ Tools
 
 [410]: https://github.com/slundberg/shap
 
-* [yellowbrick][420] - visualize machine learning models
+* [Shap video][420] - background behind approach
 
-[420]: https://github.com/DistrictDataLabs/yellowbrick
+[420]: https://www.youtube.com/watch?v=B-c8tIgchu0
 
-* [pycaret][430] - low-code machine learning library
+* [yellowbrick][430] - visualize machine learning models
 
-[430]: https://github.com/pycaret
+[430]: https://github.com/DistrictDataLabs/yellowbrick
+
+* [pycaret][440] - low-code machine learning library
+
+[440]: https://github.com/pycaret
 
 ## Requirements
 
