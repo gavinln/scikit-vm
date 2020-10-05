@@ -18,7 +18,7 @@ seaborn = "*"
 flake8 = "*"
 yapf = "*"
 Pillow = "*"
-tornado = "==5.1.1"
+tornado = "*"
 jupyter = "*"
 jupyter-contrib-nbextensions = "*"
 jupytext = "*"
@@ -35,7 +35,7 @@ jupyter-lsp = "*"
 python-language-server = {extras = ["all"],version = "*"}
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
 
 [pipenv]
 allow_prereleases = true
