@@ -530,17 +530,35 @@ Tools
 * [streamlit](https://github.com/streamlit/streamlit) - tools for machine learning - 1389 stars
 * [scikit libraries](https://towardsdatascience.com/5-obscure-python-libraries-every-data-scientist-should-know-3651bf5d3be3)
 
+## Other machine learning libraries
+
+* [Feature engine][400] - feature transformers for scikit-learn
+
+[400]: https://github.com/solegalli/feature_engine
+
+* [Shap][410] - explain the output of machine learning models
+
+[410]: https://github.com/slundberg/shap
+
+* [yellowbrick][420] - visualize machine learning models
+
+[420]: https://github.com/DistrictDataLabs/yellowbrick
+
+* [pycaret][430] - low-code machine learning library
+
+[430]: https://github.com/pycaret
+
 ## Requirements
 
 The following software is needed to get the software from github and run
 Vagrant to set up the Python development environment. The Git environment
-also provides an [SSH  client][400] for Windows.
+also provides an [SSH  client][500] for Windows.
 
-* [Oracle VM VirtualBox][410]
-* [Vagrant][420] version 1.9.1 or higher
-* [Git][430]
+* [Oracle VM VirtualBox][510]
+* [Vagrant][520] version 1.9.1 or higher
+* [Git][530]
 
-[400]: http://en.wikipedia.org/wiki/Secure_Shell
-[410]: https://www.virtualbox.org/
-[420]: http://vagrantup.com/
-[430]: http://git-scm.com/
+[500]: http://en.wikipedia.org/wiki/Secure_Shell
+[510]: https://www.virtualbox.org/
+[520]: http://vagrantup.com/
+[530]: http://git-scm.com/
