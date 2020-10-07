@@ -34,6 +34,7 @@ autopep8 = "*"
 jupyter-lsp = "*"
 python-language-server = {extras = ["all"],version = "*"}
 xgboost = "*"
+interpret = "*"
 
 [requires]
 python_version = "3.8"
