@@ -36,6 +36,7 @@ python-language-server = {extras = ["all"],version = "*"}
 xgboost = "*"
 interpret = "*"
 sweetviz = "*"
+jupyterlab-git = "*"
 
 [requires]
 python_version = "3.8"
