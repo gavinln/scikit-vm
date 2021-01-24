@@ -78,7 +78,21 @@ jupyter contrib nbextension install --user
 
 5. Open the notebook in the browser at the URL
 
-### Jupyterlab
+### Jupyterlab extensions
+
+Jupyterlab 3.x supports installing extensions directory using pip without
+building the extensions using node.
+
+The following extensions are useful
+
+```
+pipenv install jupyterlab-git
+pipenv install jupyterlab_vim
+pipenv install jupyterlab_lsp
+pipenv install aquirdturtle_collapsible_headings  # less useful
+```
+
+### Jupyterlab extensions old
 
 1. Enable the server extension
 
