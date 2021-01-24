@@ -10,6 +10,6 @@ IP=0.0.0.0
 
 JUPYTER_CMD="jupyter lab --port=8888 --ip=$IP --no-browser"
 
-BASIC_NOTEBOOKS=$SCRIPT_DIR/../
+BASIC_NOTEBOOKS="$SCRIPT_DIR/../notebooks"
 
 $JUPYTER_CMD --notebook-dir="$BASIC_NOTEBOOKS"
