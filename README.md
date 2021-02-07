@@ -346,13 +346,23 @@ The dashboards not only display data but also accept simple user inputs.
 
 [Porting Flask to FastAPI](https://www.pluralsight.com/tech-blog/porting-flask-to-fastapi-for-ml-model-serving/)
 
-## Extending pandas
+## Pandas
+
+### Extending pandas
 
 * [Cyberpandas][700] - supports IP addresses
 * [GeoPandas][710] - supports geographic data
 
 [700]: https://github.com/ContinuumIO/cyberpandas
 [710]: https://github.com/geopandas/geopandas
+
+### Learning pandas
+
+* [100 numpy puzzles][720]
+* [100 Pandas puzzles][730]
+
+[720]: https://github.com/rougier/numpy-100
+[730]: https://github.com/ajcr/100-pandas-puzzles
 
 ## Jupyterlab tips
 
