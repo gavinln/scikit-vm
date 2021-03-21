@@ -576,6 +576,20 @@ Tools
 
 [440]: https://github.com/pycaret
 
+
+### Statsmodels
+
+Videos
+
+1. [Introduction to statsmodels][900]
+2. [Introduction to patsy][910]
+3. [Patsy design matrices][910]
+
+[900]: https://www.youtube.com/watch?v=V86gTgL1FRw
+[910]: https://www.youtube.com/watch?v=8eeRNiVmo2U
+[920]: https://www.youtube.com/watch?v=3DLrznP4pOM
+
+
 ## Requirements
 
 The following software is needed to get the software from github and run
