@@ -1,0 +1,6 @@
+{
+	"include": ["notebooks"],
+	"venvPath": "/home/gavin/.local/share/virtualenvs",
+	"venv": "scikit-vm-8S7AlGJB",
+	"verboseOutput": true
+}
