@@ -31,9 +31,12 @@ interpret = "*"
 sweetviz = "*"
 jupyterlab-git = "*"
 jupyterlab-lsp = "*"
-aquirdturtle-collapsible-headings = "*"
 flake8 = "*"
 yapf = "*"
+python-language-server = {extras = ["all"], version = "*"}
+black = "*"
+voila = "*"
+lightgbm = "*"
 
 [requires]
 python_version = "3.8"
