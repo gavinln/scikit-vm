@@ -576,6 +576,21 @@ Tools
 
 [440]: https://github.com/pycaret
 
+### Featuren engineering
+
+#### Videos
+
+https://www.youtube.com/watch?v=tfWzbhKX294
+
+https://www.youtube.com/watch?v=vsKNxbP8R_8
+
+#### Feature engineering books
+
+http://www.feat.engineering/
+
+#### Machine learning videos including feature engineering
+
+https://www.youtube.com/c/HeatonResearch/search
 
 ### Statsmodels
 
