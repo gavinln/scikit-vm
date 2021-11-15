@@ -37,6 +37,7 @@ python-language-server = {extras = ["all"], version = "*"}
 black = "*"
 voila = "*"
 lightgbm = "*"
+optuna = "*"
 
 [requires]
 python_version = "3.8"
