@@ -7,11 +7,16 @@ windows:
   shell_command_before:
     - echo initial command
   panes:
-    - shell_command: echo "started jupyter in other notebook"
+    - shell_command: echo "jupyter in other pane"
       focus: true
-    - pipenv run bash ./scripts/notebook-jupyter.sh
+    - make jupyter
+- window_name: vifm
+  layout: even-horizontal
+  panes:
+    - shell_command: echo "vifm in other pane"
+    - vifm .
 - window_name: git
   layout: even-horizontal
   panes:
-    - shell_command: git repl
-    - vifm .
+    - shell_command: echo "git in other pane"
+    - git repl
