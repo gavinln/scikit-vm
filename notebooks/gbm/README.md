@@ -15,3 +15,8 @@ It includes the following posts on Gradient Boosting
 5. Part V – CatBoost
 6. Part VI – NGBoost
 7. Part VII – The Battle of the Boosters
+
+### Pipelines
+
+* https://mahmoudyusof.github.io/general/scikit-learn-pipelines/
+* https://towardsdatascience.com/getting-the-most-out-of-scikit-learn-pipelines-c2afc4410f1a

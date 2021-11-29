@@ -6,7 +6,6 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-numpy = "*"
 scipy = "*"
 sklearn = "*"
 pandas = "*"
@@ -38,6 +37,9 @@ black = "*"
 voila = "*"
 lightgbm = "*"
 optuna = "*"
+umap-learn = "*"
+numpy = "==1.19.5"
+python-lsp-server = {extras = ["all"], version = "*"}
 
 [requires]
 python_version = "3.8"
