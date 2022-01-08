@@ -547,14 +547,10 @@ Videos
 ## Requirements
 
 The following software is needed to get the software from github and run
-Vagrant to set up the Python development environment. The Git environment
-also provides an [SSH  client][500] for Windows.
+Vagrant to set up the Python development environment.
 
-* [Oracle VM VirtualBox][510]
-* [Vagrant][520] version 1.9.1 or higher
-* [Git][530]
+* [Oracle VM VirtualBox][1000]
+* [Vagrant][1010] version 1.9.1 or higher
 
-[500]: http://en.wikipedia.org/wiki/Secure_Shell
-[510]: https://www.virtualbox.org/
-[520]: http://vagrantup.com/
-[530]: http://git-scm.com/
+[1000]: https://www.virtualbox.org/
+[1010]: http://vagrantup.com/
