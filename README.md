@@ -544,6 +544,47 @@ Videos
 [920]: https://www.youtube.com/watch?v=3DLrznP4pOM
 
 
+## Setup pre-commit
+
+https://pre-commit.com/
+
+1. Install pre-commit pip install pre-commit
+
+```
+2. Check version
+pre-commit --version
+```
+
+3. Generate a sample .pre-commit-config.yaml file
+
+```
+pre-commit sample-config
+```
+
+4. Save and overwrite the existing .pre-commit-config.yaml
+
+```
+pre-commit sample-config > .pre-commit-config.yaml
+```
+
+5. Run the pre-commit checks manuall
+
+```
+pre-commit run --all-files
+```
+
+6. Install the pre-commit hooks
+
+```
+pre-commit install
+```
+
+7. Uninstall the pre-commit hooks
+
+```
+pre-commit uninstall
+```
+
 ## Requirements
 
 The following software is needed to get the software from github and run

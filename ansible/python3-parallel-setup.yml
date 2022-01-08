@@ -11,22 +11,21 @@
 # may be needed for dask
 # - name: install cloudpickle
 #   pip: name=cloudpickle state=present
-# 
+
 # - name: install partd
 #   pip: name=partd state=present
-# 
+
 # - name: install dask
 #   pip: name=dask state=present
-# 
+
 # - name: install cython for feather
 #   pip: name=cython state=present
-# 
+
 # - name: install feather-format
 #   pip: name=feather-format state=present
-# 
+
 # - name: install distributed
 #   pip: name=distributed state=present
-# 
+
 # - name: install castra
 #   pip: name=castra state=present
-

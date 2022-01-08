@@ -31,7 +31,7 @@
   #     depth={{ fzf_depth }}
   #   register: fzf_status
   #   become_user: vagrant
-  # 
+  #
   # - name: install fzf
   #   command: "{{ fzf_home }}/install"
   #   when: fzf_status.changed

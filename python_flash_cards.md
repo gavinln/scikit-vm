@@ -208,7 +208,7 @@ print()
 
 while not q_lifo.empty():
     print(q_lifo.get(), end=' ')
-    
+
 # 0 1 2 3 4
 # 4 3 2 1 0
 ```
@@ -314,7 +314,7 @@ class Context:
 
 with Context() as d:
     d.do_something()
-    
+
 # Context Managers as Function Decorators
 import contextlib
 
@@ -362,7 +362,7 @@ def print_log1(f):
 @print_log1
 def add1(x, y):
     print(x + y)
-    
+
 add1(3, 4)
 # in function: add1
 # 7
@@ -378,7 +378,7 @@ def print_log2(message):
 @print_log2('trace')
 def add2(x, y):
     print(x + y)
-    
+
 add2(3, 4)
 # in function: add2 trace
 # 7
