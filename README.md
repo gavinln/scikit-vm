@@ -63,12 +63,12 @@ jupyter contrib nbextension install --user
 
 3. Some useful plugins
 
-    * Code prettify
-    * Collapsible Headings
-    * Comment/Uncomment Hotkey
-    * ExecuteTime
-    * Select CodeMirror Keymap
-    * Table of Contents (2)
+* Code prettify
+* Collapsible Headings
+* Comment/Uncomment Hotkey
+* ExecuteTime
+* Select CodeMirror Keymap
+* Table of Contents (2)
 
 4. Start the Jupyter notebook or Jupyterlab environment
 
@@ -133,12 +133,12 @@ jupyter labextension install @ryantam626/jupyterlab_code_formatter
 
 6. Install these Jupyter extensions
 
-    * @jupyter-widgets/Jupyterlab-manager
-    * @Jupyterlab/shortcutui
-    * @Jupyterlab/toc
-    * jupyterlab-jupytext
-    * jupyterlab_vim
-    * @ryantam626/jupyterlab_code_formatter
+* @jupyter-widgets/Jupyterlab-manager
+* @Jupyterlab/shortcutui
+* @Jupyterlab/toc
+* jupyterlab-jupytext
+* jupyterlab_vim
+* @ryantam626/jupyterlab_code_formatter
 
 [nbresuse](https://github.com/yuvipanda/nbresuse)
 
@@ -146,22 +146,22 @@ jupyter labextension install @ryantam626/jupyterlab_code_formatter
 
 From the PyData [presentation](https://www.youtube.com/watch?v=3pdrzhny9Lc)
 
-    * jupyterlab-git
-    * nbdime
-    * jupyterlab_code_formatter
-    * jupyterlab-toc
-    * jupyterlab-quickopen
-    * jupyterlab-sidecar
-    * jupyterlab-drawio
-    * jupyterlab-topbar
-    * jupyterlab-sql
-    * jupyterlab-celltags
-    * jupyterlab-go-to-definition
-    * jupyterlab-lsp
-    * voila
-    * jupyterlab-matplotlib
-    * jupyterlab-variableinspector
-    * jupyterlab-templates
+* jupyterlab-git
+* nbdime
+* jupyterlab_code_formatter
+* jupyterlab-toc
+* jupyterlab-quickopen
+* jupyterlab-sidecar
+* jupyterlab-drawio
+* jupyterlab-topbar
+* jupyterlab-sql
+* jupyterlab-celltags
+* jupyterlab-go-to-definition
+* jupyterlab-lsp
+* voila
+* jupyterlab-matplotlib
+* jupyterlab-variableinspector
+* jupyterlab-templates
 
 ## Scikit-learn notebooks
 
@@ -371,67 +371,7 @@ The dashboards not only display data but also accept simple user inputs.
 * [Jupyterlab libraries & resources](https://github.com/markusschanta/awesome-jupyter#jupyterlab-extensions)
 * [Convert notebook to Confluence](https://github.com/Valassis-Digital-Media/nbconflux)
 * [Python library: Markdown to HTML](https://github.com/Python-Markdown/markdown)
-* [Knowledge repo](https://github.com/airbnb/knowledge-repo)
 * [Best practices with notebooks](https://cloud.google.com/blog/products/ai-machine-learning/best-practices-that-can-improve-the-life-of-any-developer-using-jupyter-notebooks)
-
-## Knowledge repo
-
-The [Knowledge repo][800] from Airbnb is a curated knowledge sharing platform
-for data scientists and other technical professions. 
-
-[800]: https://github.com/airbnb/knowledge-repo/
-
-Detailed instructions for setting up a Knowledge repo are documented [here][810]
-
-[810]: https://daniel.perez.sh/blog/2018/knowledge-repo-setup/
-
-1. Display the knowledge repo version
-
-```
-knowledge_repo --version
-```
-
-2. Create a knowledge-repo
-
-```
-knowledge_repo --repo knowledge-repo init
-```
-
-3. Start the knowledge repo
-
-```
-knowledge_repo --repo knowledge-repo runserver
-```
-
-4. Create a test Jupyter notebook post
-
-```
-knowledge_repo --repo knowledge-repo create ipynb test.ipynb
-```
-
-5. Start the Jupyter notebook
-
-```
-jupyter notebook --no-browser
-```
-
-6. Add the post to the repo
-
-```
-knowledge_repo --repo knowledge-repo add -p test test.ipynb
-```
-
-7. Preview the post by ruuning the server again
-
-```
-knowledge_repo --repo knowledge-repo runserver
-```
-
-8. Submit the post
-
-```
-knowledge_repo --repo knowledge-repo submit test.kp
-```
 
 ## Miscellaneous
 
@@ -464,26 +404,25 @@ pipenv install --python /usr/bin/python3
 To install the libraries manually type:
 
 ```
-pipenv install numpy 
+pipenv install numpy
 pipenv install scipy
-pipenv install sklearn 
-pipenv install pandas 
-pipenv install watermark 
-pipenv install pydot3 
-pipenv install matplotlib 
-pipenv install statsmodels 
-pipenv install seaborn 
-pipenv install flake8 
-pipenv install yapf 
-pipenv install Pillow 
-pipenv install plotly 
+pipenv install sklearn
+pipenv install pandas
+pipenv install watermark
+pipenv install pydot3
+pipenv install matplotlib
+pipenv install statsmodels
+pipenv install seaborn
+pipenv install flake8
+pipenv install yapf
+pipenv install Pillow
+pipenv install plotly
 pipenv install tornado==5.1.1
-pipenv install jupyter 
-pipenv install jupyter-contrib-nbextensions 
-pipenv install jupytext 
-pipenv install jupyterlab 
-pipenv install nbresuse 
-pipenv install "knowledge-repo[all]"
+pipenv install jupyter
+pipenv install jupyter-contrib-nbextensions
+pipenv install jupytext
+pipenv install jupyterlab
+pipenv install nbresuse
 ```
 
 ### Clean Jupyter notebooks
