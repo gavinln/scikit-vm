@@ -41,6 +41,13 @@ umap-learn = "*"
 numpy = "==1.19.5"
 python-lsp-server = {extras = ["all"], version = "*"}
 pre-commit = "*"
+pycaret = "*"
+deap = "*"
+update-checker = "*"
+tqdm = "*"
+stopit = "*"
+papermill = "*"
+tpot = "*"
 
 [requires]
 python_version = "3.8"
