@@ -511,11 +511,53 @@ Tools
 
 [430]: https://github.com/DistrictDataLabs/yellowbrick
 
-* [pycaret][440] - low-code machine learning library
+### PyCaret
+
+[PyCaret][440] is a low-code machine learning library that supports multiple
+machine learning libraries including sklearn on the CPU and other libraries
+such as XGBoost, LightGBM and Catboost on the GPU. It also supports integration
+with MLFlow.
 
 [440]: https://github.com/pycaret
 
-### Featuren engineering
+### TPOT
+
+[TPOT][450] is an automated Python machine learning tool that optimizes machine
+learning pipelines using genetic programming. Other than sklearn it supports
+libraries such as XgBoost and PyTorch on the GPU. It does not support lightgbm.
+
+[450]: https://github.com/EpistasisLab/tpot/
+
+1. Install pre-requisite libraries
+
+```
+pip install deap update_checker tqdm stopit 
+```
+
+2. Install tpot
+
+```
+pip install tpot
+```
+
+### Auto-sklearn
+
+[Auto-sklearn][460] is an automated machine learning toolkit and a drop-in
+replacement for Sklearn estimators. It does not support other libraries such as
+XGBoost nor LightGBM. This [tutorial][470] explains how to use Auto-sklearn.
+
+[460]: https://github.com/automl/auto-sklearn
+
+[470]: https://machinelearningmastery.com/auto-sklearn-for-automated-machine-learning-in-python/
+
+### Hyper-parameter optimization libraries
+
+- https://github.com/optuna/optuna
+- https://github.com/scikit-optimize/scikit-optimize
+- https://github.com/fmfn/BayesianOptimization
+- https://github.com/hyperopt/hyperopt
+
+### Feature engineering
 
 #### Videos
 
