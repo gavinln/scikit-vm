@@ -25,7 +25,7 @@ flashcards_algorithms:
 	# @jupytext --to ipynb -o notebooks/14_Algorithms_flash_cards.ipynb algorithms_flash_cards.md
 
 jupyter:  ## run jupyter
-	pipenv run bash ./scripts/lab-jupyter.sh
+	poetry run bash ./scripts/lab-jupyter.sh
 	# pipenv run bash ./scripts/notebook-jupyter.sh
 
 tmux:

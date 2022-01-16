@@ -7,7 +7,7 @@ verify_ssl = true
 
 [packages]
 scipy = "*"
-sklearn = "*"
+sklearn = "=="
 pandas = "*"
 watermark = "*"
 pydot3 = "*"
@@ -38,7 +38,7 @@ voila = "*"
 lightgbm = "*"
 optuna = "*"
 umap-learn = "*"
-numpy = "==1.19.5"
+numpy = "*"
 python-lsp-server = {extras = ["all"], version = "*"}
 pre-commit = "*"
 pycaret = "*"

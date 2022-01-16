@@ -518,6 +518,11 @@ machine learning libraries including sklearn on the CPU and other libraries
 such as XGBoost, LightGBM and Catboost on the GPU. It also supports integration
 with MLFlow.
 
+PyCaret depends on an older version of scikit-learn (0.23.2) and cannot be used
+with scikit-learn (1.0.2) as of 2022-01-15.
+
+This happens even when running `poetry add pycaret --allow-prereleases`
+
 [440]: https://github.com/pycaret
 
 ### TPOT
@@ -626,6 +631,16 @@ pre-commit install
 ```
 pre-commit uninstall
 ```
+
+## Prediction intervals
+
+* https://machinelearningmastery.com/prediction-intervals-for-machine-learning/
+
+* https://towardsdatascience.com/how-to-generate-prediction-intervals-with-scikit-learn-and-python-ab3899f992ed
+
+* https://medium.com/@qucit/a-simple-technique-to-estimate-prediction-intervals-for-any-regression-model-2dd73f630bcb
+
+* http://www.xavierdupre.fr/app/mlinsights/helpsphinx/index.html
 
 ## Requirements
 
