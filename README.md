@@ -493,6 +493,12 @@ Tools
 * [streamlit](https://github.com/streamlit/streamlit) - tools for machine learning - 1389 stars
 * [scikit libraries](https://towardsdatascience.com/5-obscure-python-libraries-every-data-scientist-should-know-3651bf5d3be3)
 
+### Python libraries to try
+
+* logguru - more convenient logging
+* pyupgrade - upgrade Python code from 3.6 to 3.7/3.8/3.9
+* ntfy - cross-platform notifications
+
 ## Other machine learning libraries
 
 * [Feature engine][400] - feature transformers for scikit-learn
@@ -633,6 +639,10 @@ pre-commit uninstall
 ```
 
 ## Prediction intervals
+
+* https://scikit-learn.org/stable/auto_examples/linear_model/plot_quantile_regression.html
+
+* https://scikit-learn.org/stable/auto_examples/ensemble/plot_gradient_boosting_quantile.html
 
 * https://machinelearningmastery.com/prediction-intervals-for-machine-learning/
 
