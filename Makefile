@@ -39,6 +39,7 @@ nb2py:  ## convert notebook to Python
 py2nb:  ## convert Python to notebook
 	@[[ -n "$(fl)" ]] || ( echo "fl is not set"; exit 1 )
 	@[[ -f "$(fl)" ]] || ( echo "$(fl) is not a valid file"; exit 1 )
+	@poetry run python -m py_compile "$(fl)"  # compile Python file
 	poetry run jupytext --to notebook "$(fl)"
 
 .PHONY: black
