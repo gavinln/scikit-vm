@@ -24,9 +24,26 @@ flashcards_algorithms:
 	@jupytext --to markdown -o algorithms_flash_cards.md notebooks/14_Algorithms_flash_cards.ipynb
 	# @jupytext --to ipynb -o notebooks/14_Algorithms_flash_cards.ipynb algorithms_flash_cards.md
 
+.PHONY: jupyter
 jupyter:  ## run jupyter
 	poetry run bash ./scripts/lab-jupyter.sh
 	# pipenv run bash ./scripts/notebook-jupyter.sh
 
+.PHONY: nb2py
+nb2py:  ## convert notebook to Python
+	@[[ -n "$(fl)" ]] || ( echo "fl is not set"; exit 1 )
+	@[[ -f "$(fl)" ]] || ( echo "$(fl) is not a valid file"; exit 1 )
+	poetry run jupytext --to py:light "$(fl)"
+
+.PHONY: py2nb
+py2nb:  ## convert Python to notebook
+	@[[ -n "$(fl)" ]] || ( echo "fl is not set"; exit 1 )
+	@[[ -f "$(fl)" ]] || ( echo "$(fl) is not a valid file"; exit 1 )
+	poetry run jupytext --to notebook "$(fl)"
+
+.PHONY: black
+black:  ## black formatting for Python files and notebooks
+	poetry run black --line-length 79 .
+
 tmux:
-	tmuxp load tmux.yaml
+	tmuxp load tmux.y
