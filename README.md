@@ -652,6 +652,10 @@ pre-commit uninstall
 
 * http://www.xavierdupre.fr/app/mlinsights/helpsphinx/index.html
 
+## Interpretable machine learning
+
+* https://christophm.github.io/interpretable-ml-book/counterfactual.html
+
 ## Requirements
 
 The following software is needed to get the software from github and run
