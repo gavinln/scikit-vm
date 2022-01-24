@@ -48,3 +48,7 @@ black:  ## black formatting for Python files and notebooks
 
 tmux:
 	tmuxp load tmux.y
+
+.PHONY: notify
+notify:  ## send notification
+	/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -File ./scripts/notify.ps1 "my title" "my message"
