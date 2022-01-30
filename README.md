@@ -542,7 +542,7 @@ libraries such as XgBoost and PyTorch on the GPU. It does not support lightgbm.
 1. Install pre-requisite libraries
 
 ```
-pip install deap update_checker tqdm stopit 
+pip install deap update_checker tqdm stopit
 ```
 
 2. Install tpot
