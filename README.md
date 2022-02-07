@@ -561,6 +561,24 @@ XGBoost nor LightGBM. This [tutorial][470] explains how to use Auto-sklearn.
 
 [470]: https://machinelearningmastery.com/auto-sklearn-for-automated-machine-learning-in-python/
 
+### Lux visualization library
+
+The Lux library allows visual exploration of pandas data frames in a Jupyter
+notebook.
+
+1. Install lux library
+
+```
+pip install lux-api
+```
+
+2. Activate the lux Jupyter lab extension
+
+```
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter labextension install luxwidget
+```
+
 ### Hyper-parameter optimization libraries
 
 - https://github.com/optuna/optuna
