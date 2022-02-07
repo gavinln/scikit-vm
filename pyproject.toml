@@ -6,22 +6,25 @@ authors = ["Gavin Noronha <gavinln@hotmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pandas = "^1.3.5"
-watermark = "^2.3.0"
-pydot3 = "^1.0.9"
-seaborn = "^0.11.2"
-jupyterlab = "^3.2.8"
-python-language-server = {extras = ["all"], version = "^0.36.2"}
-xgboost = "^1.5.1"
-lightgbm = "^3.3.2"
-optuna = "^2.10.0"
-umap-learn = "^0.5.2"
-papermill = "^2.3.3"
-jupytext = "^1.13.6"
-TPOT = "^0.11.7"
-ipython = "^8.0.0"
-scikit-learn = {version = "^1.0.2", allow-prereleases = true}
-black = {extras = ["jupyter"], version = "^21.12b0"}
+pandas = "*"
+watermark = "*"
+pydot3 = "*"
+seaborn = "*"
+jupyterlab = "*"
+xgboost = "*"
+lightgbm = "*"
+optuna = "*"
+umap-learn = "*"
+papermill = "*"
+TPOT = "*"
+ipython = "*"
+scikit-learn = "*"
+black = "*"
+jupytext = "*"
+python-lsp-server = "*"
+jupyter-console = "*"
+lux-api = "*"
+pandas-profiling = "^3.1.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
