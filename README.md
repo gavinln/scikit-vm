@@ -674,6 +674,20 @@ pre-commit uninstall
 
 * https://christophm.github.io/interpretable-ml-book/counterfactual.html
 
+## Ranking
+
+* http://www.legendu.net/misc/blog/learning-to-rank/
+* https://everdark.github.io/k9/notebooks/ml/learning_to_rank/learning_to_rank.html
+* https://github.com/microsoft/LightGBM/tree/master/examples/lambdarank
+* https://stackoverflow.com/questions/64294962/how-to-implement-learning-to-rank-using-lightgbm
+
+## Custom loss functions for gradient boosting
+
+* https://towardsdatascience.com/custom-loss-functions-for-gradient-boosting-f79c1b40466d
+* https://hippocampus-garden.com/lgbm_custom/
+* https://maxhalford.github.io/blog/lightgbm-focal-loss/
+* https://amaarora.github.io/2020/06/29/FocalLoss.html
+
 ## Requirements
 
 The following software is needed to get the software from github and run
