@@ -1,7 +1,0 @@
-{
-    "include": ["notebooks"],
-    "exclude": ["**/.ipynb_checkpoints"],
-    "venvPath": "/home/gavin/.cache/pypoetry/virtualenvs",
-    "venv": "scikit-vm-yif_eX-X-py3.8",
-    "verboseOutput": true
-}

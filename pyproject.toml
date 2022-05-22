@@ -44,3 +44,11 @@ build-backend = "poetry.core.masonry.api"
 [tool.black]
 line-length = 79
 skip-string-normalization = true
+
+[tool.pyright]
+include = ["notebooks"]
+exclude = ["**/.ipynb_checkpoints"]
+venvPath = "/home/gavin/.cache/pypoetry/virtualenvs"
+venv = "scikit-vm-yif_eX-X-py3.8"
+verboseOutput = true
+
